@@ -1,0 +1,80 @@
+.combineofsidebarandproduct{
+    display:flex;
+}
+.Sidebar{
+    text-align: center;
+    width:25%;
+}
+.Product{
+    width:75%;
+
+}
+.university_img{
+    width:100%;
+    height: 190px;
+}
+.card{
+    display: flex;
+    
+    width:98%;
+    margin:10px;
+    padding:10px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+#icondiv{
+    display: flex;
+    text-align: center;
+}
+#locateicon{
+    margin-top: 8px;
+    padding-right: 5px;
+}
+.lineheight{
+    /* border:2px solid blue; */
+    width:48%;
+    margin-left: 5%;
+    line-height: 30px;
+    /* border:2px solid blue; */
+}
+.h1_text{
+    font-size: 20px;
+}
+.stardiv{
+    margin: 8px 4px 0px 3px;
+}
+.buttondiv{
+    /* border:1px solid red; */
+    width:35%
+}
+.visitbtn{
+    color: white;
+    background-color: tomato;
+    padding: 3px 37px  ;
+    border-radius: 4px;
+    margin-left: 120px;
+}
+.brochurebtn{
+    color: white;
+    background-color: tomato;
+    padding: 3px 20px ;
+    border-radius: 4px;
+    margin-left: 120px;
+}
+#coursetext{
+    color:red;
+}
+.courses{
+    color:black;
+    
+}
+.brochure{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.sidebar{
+    border: 1px solid red;
+    width:95%;
+    margin:10px auto;
+    
+}

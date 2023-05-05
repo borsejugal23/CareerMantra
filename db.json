@@ -1,0 +1,201 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "year_of_establishment": 1096,
+        "name": "University of Oxford",
+        "country": "England",
+        "faculty": 250,
+        "students": 3000,
+        "courses": 15,
+        "images": [
+          "https://images.unsplash.com/photo-1583373834259-46cc92173cb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dW5pdmVyc2l0eSUyMGNhbXB1c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+          "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVuaXZlcnNpdHklMjBjYW1wdXN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+          "https://images.unsplash.com/photo-1619279302118-43033660826a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHN0dWRlbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+        ],
+        "flag": "https://t4.ftcdn.net/jpg/01/71/57/89/360_F_171578974_eNhE6sEpc6jsK6Py7IxhTbIZZQ7878Wb.jpg",
+        "ownership": "Public/Government",
+        "rating": "4.2/5",
+        "place": "Oxford",
+        "category": "university",
+        "brochure":"300"
+      },
+      {
+        "id": 2,
+        "year_of_establishment": 1209,
+        "name": "University of Cambridge",
+        "country": "UK",
+        "faculty": 300,
+        "students": 3100,
+        "courses": 20,
+        "images": [
+          "https://images.unsplash.com/photo-1581362072978-14998d01fdaa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHVuaXZlcnNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+          "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+          "https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+        ],
+        "flag": "https://t4.ftcdn.net/jpg/01/71/57/89/360_F_171578974_eNhE6sEpc6jsK6Py7IxhTbIZZQ7878Wb.jpg",
+        "ownership": "Public/Government",
+        "rating": "4.2/5",
+        "place": "Cambridge",
+        "category": "university",
+        "brochure":"500"
+      },
+      {
+        "id": 3,
+        "place": "Pasadena",
+        "year_of_establishment": 1209,
+        "name": "California Institute of Technology",
+        "country": "USA",
+        "faculty": 500,
+        "students": 2700,
+        "courses": 22,
+        "images": [
+          "https://images.unsplash.com/20/cambridge.JPG?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+          "https://images.unsplash.com/photo-1564981797816-1043664bf78d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHVuaXZlcnNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+          "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+        ],
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png",
+        "ownership": "Public/Government",
+        "rating": "4.2/5",
+        "category": "university",
+        "brochure":"400"
+      },
+      {
+        "id": 4,
+        "year_of_establishment": "2004",
+        "name": "Sandeep University",
+        "country": "India",
+        "faculty": "500",
+        "students": "6000",
+        "courses": "32",
+        "images": [
+          "https://images.unsplash.com/photo-1569447891824-7a1758aa73a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHVuaXZlcnNpdHklMjBjYW1wdXN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60","https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eSUyMGNhbXB1c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60","https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3R1ZGVudHMlMjB0YWxraW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+        ],
+        "flag": "https://t4.ftcdn.net/jpg/00/62/19/83/360_F_62198354_ZMVmTGPrX6RFb9DfEN67As9zhVvlUOpt.jpg",
+        "ownership": "private",
+        "rating": "4/5",
+        "place": "Nashik",
+        "category": "university",
+        "brochure": "460"
+      },
+      {
+        "id": 5,
+        "year_of_establishment": "1600",
+        "name": "Pune University",
+        "country": "India",
+        "faculty": "1500",
+        "students": "25000",
+        "courses": "55",
+        "images": [
+          "https://images.unsplash.com/photo-1577195943805-d9a2f1c404bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHVuZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60","https://images.unsplash.com/photo-1569878766010-17bff0a1987d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGxpYnJhcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60","https://images.unsplash.com/photo-1542868796-20f2ddc9d41f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHN0dWRlbnRzJTIwdGFsa2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+        ],
+        "flag": "https://t4.ftcdn.net/jpg/00/62/19/83/360_F_62198354_ZMVmTGPrX6RFb9DfEN67As9zhVvlUOpt.jpg",
+        "ownership": "Government",
+        "rating": "4.8/5",
+        "place": "Pune",
+        "category": "university",
+        "brochure": "3500"
+      },
+      {
+        "id": 6,
+        "year_of_establishment": "2004",
+        "name": "Sapkal Knowledge Hub",
+        "country": "India",
+        "faculty": "450",
+        "students": "3200",
+        "courses": "32",
+        "images": [
+          "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29sbGVnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60","https://images.unsplash.com/photo-1561089489-f13d5e730d72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fHN0dWRlbnRzJTIwdGFsa2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60","https://plus.unsplash.com/premium_photo-1661634136642-7a4d16900f84?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzl8fHN0dWRlbnRzJTIwdGFsa2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+        ],
+        "flag": "https://t4.ftcdn.net/jpg/00/62/19/83/360_F_62198354_ZMVmTGPrX6RFb9DfEN67As9zhVvlUOpt.jpg",
+        "ownership": "private",
+        "rating": "4/5",
+        "place": "Nashik",
+        "category": "university",
+        "brochure": "460"
+      }
+    ],
+    "cart": [],
+    "login": [
+      {
+        "id": 1,
+        "username": "admin",
+        "password": "admin"
+      }
+    ],
+    "admin": [
+      {
+        "id": 1,
+        "year_of_establishment": 1096,
+        "name": "University of Oxford",
+        "country": "England",
+        "faculty": 250,
+        "students": 3000,
+        "courses": 15,
+        "images": [
+          "https://images.unsplash.com/photo-1583373834259-46cc92173cb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dW5pdmVyc2l0eSUyMGNhbXB1c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+          "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVuaXZlcnNpdHklMjBjYW1wdXN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+          "https://images.unsplash.com/photo-1619279302118-43033660826a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHN0dWRlbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+        ],
+        "flag": "https://t4.ftcdn.net/jpg/01/71/57/89/360_F_171578974_eNhE6sEpc6jsK6Py7IxhTbIZZQ7878Wb.jpg",
+        "ownership": "public,Government",
+        "rating": 4.2,
+        "place": "Oxford",
+        "category": "university"
+      },
+      {
+        "id": 2,
+        "year_of_establishment": 1209,
+        "name": "University of Cambridge",
+        "country": "UK",
+        "faculty": 300,
+        "students": 3100,
+        "courses": 15,
+        "images": [
+          "https://images.unsplash.com/photo-1581362072978-14998d01fdaa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHVuaXZlcnNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+          "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+          "https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+        ],
+        "flag": "https://t4.ftcdn.net/jpg/01/71/57/89/360_F_171578974_eNhE6sEpc6jsK6Py7IxhTbIZZQ7878Wb.jpg",
+        "ownership": "public,Government",
+        "rating": 4.2,
+        "place": "Cambridge",
+        "category": "university"
+      },
+      {
+        "id": 3,
+        "place": "Pasadena",
+        "year_of_establishment": 1209,
+        "name": "The California Institute of Technology",
+        "country": "USA",
+        "faculty": 500,
+        "students": 2700,
+        "courses": 15,
+        "images": [
+          "https://images.unsplash.com/20/cambridge.JPG?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+          "https://images.unsplash.com/photo-1564981797816-1043664bf78d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHVuaXZlcnNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+          "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+        ],
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png",
+        "ownership": "public,Government",
+        "rating": 4.2,
+        "category": "university"
+      },
+      {
+        "id": 4,
+        "year_of_establishment": "",
+        "name": "",
+        "country": "",
+        "faculty": "",
+        "students": "",
+        "courses": "",
+        "images": [],
+        "flag": "",
+        "ownership": "",
+        "rating": "",
+        "place": "",
+        "category": ""
+      }
+    ]
+  }
+  

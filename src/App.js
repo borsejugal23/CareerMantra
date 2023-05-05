@@ -1,9 +1,16 @@
-import Footer from "./components/Footer";
+
+
+import { MainRoutes } from "./components/MainRoutes";
+
+
 
 function App() {
   return (
     <div className="App">
-      <Footer />
+
+
+    <MainRoutes/>
+
     </div>
   );
 }
