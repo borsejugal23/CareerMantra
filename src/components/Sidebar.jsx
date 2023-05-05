@@ -1,5 +1,6 @@
+import "../Styles/Products.css";
 export const Sidebar=()=>{
-    return <div>
-        
+    return <div className="sidebar">
+        hii
     </div>
 }
