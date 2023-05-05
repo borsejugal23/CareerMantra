@@ -1,0 +1,65 @@
+{
+    "products":[
+        {
+            "id":1,
+            "year_of_establishment":1096,
+            "name":"University of Oxford",
+            "country":"England",
+            "faculty": 250,
+            "students":3000,
+            "courses":15,
+            "images":["https://images.unsplash.com/photo-1583373834259-46cc92173cb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dW5pdmVyc2l0eSUyMGNhbXB1c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60","https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVuaXZlcnNpdHklMjBjYW1wdXN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60","https://images.unsplash.com/photo-1619279302118-43033660826a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHN0dWRlbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"],
+            "flag":"https://t4.ftcdn.net/jpg/01/71/57/89/360_F_171578974_eNhE6sEpc6jsK6Py7IxhTbIZZQ7878Wb.jpg",
+            "ownership":"public,Government",
+            "rating":4.2,
+            "place":"Oxford",
+            "category":"university"
+        },
+        {
+            "id":2,
+            "year_of_establishment":1209,
+            "name":"University of Cambridge",
+            "country":"UK",
+            "faculty": 300,
+            "students":3100,
+            "courses":15,
+            "images":["https://images.unsplash.com/photo-1581362072978-14998d01fdaa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHVuaXZlcnNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60","https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60","https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"],
+            "flag":"https://t4.ftcdn.net/jpg/01/71/57/89/360_F_171578974_eNhE6sEpc6jsK6Py7IxhTbIZZQ7878Wb.jpg",
+            "ownership":"public,Government",
+            "rating":4.2,
+            "place":"Cambridge",
+            "category":"university"
+        },
+         {
+            "id":3,
+            "place":"Pasadena",
+            "year_of_establishment":1209,
+            "name":"The California Institute of Technology",
+            "country":"USA",
+            "faculty": 500,
+            "students":2700,
+            "courses":15,
+            "images":["https://images.unsplash.com/20/cambridge.JPG?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60","https://images.unsplash.com/photo-1564981797816-1043664bf78d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHVuaXZlcnNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60","https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"],
+            "flag":"https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png",
+            "ownership":"public,Government",
+            "rating":4.2,
+            "category":"university"
+        },
+        {
+            "id": 4,
+            "year_of_establishment": "",
+            "name": "",
+            "country": "",
+            "faculty": "",
+            "students": "",
+            "courses": "",
+            "images": [],
+            "flag": "",
+            "ownership": "",
+            "rating": "",
+            "place": "",
+            "category": ""
+        }
+
+    ]
+}
