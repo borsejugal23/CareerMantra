@@ -16,6 +16,10 @@ export const MainRoutes=()=>{
     <Route path="/product" element={<ProductList/>}/>
     <Route path="/cart" element={<CartPage/>}/>
 
+   
+   
+
+
     <Route path="/single/:id" element={<SinglePage/>}/>
 
    
@@ -24,5 +28,6 @@ export const MainRoutes=()=>{
     <Route path="/dashboard" component={<AdminList />} />
 
  
+
  </Routes>
 }

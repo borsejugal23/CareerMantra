@@ -30,3 +30,10 @@
     font-weight: bold;
     text-shadow: 2px 2px 10px black;
 }
+
+.mid{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
