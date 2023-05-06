@@ -9,7 +9,7 @@ const Footer = () => {
       <div style={{width:"100%",backgroundColor:"#1E88E5",paddingTop:"50px",paddingBottom:"50px"}}>
         <h1 style={{textAlign:"center",color:"white",fontFamily:"sans-serif",fontSize:"24px"}}>Subscribe to our Newsletter</h1>
         <div style={{margin:"auto",height:"50px",width:"50%",marginTop:"10px"}}>
-        <input type="email" placeholder='example@gmail.com' style={{border:"1px solid black",borderRadius:"5px",height:"40px",width:"70%",marginLeft:"20px"}}/>
+        <input type="email" placeholder='example@gmail.com' style={{border:"none",borderRadius:"3px",height:"40px",width:"70%",marginLeft:"20px"}}/>
         <button style={{height:"40px",backgroundColor:"#EEEEEE",width:"20%",borderRadius:"5px",color:"#039BE5"}}>subscribe</button>
         </div>
       </div>

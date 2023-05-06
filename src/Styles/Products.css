@@ -49,20 +49,20 @@
 }
 .visitbtn{
     color: white;
-    background-color: tomato;
+    background-color: #1DA1F2;
     padding: 3px 37px  ;
     border-radius: 4px;
     margin-left: 120px;
 }
 .brochurebtn{
     color: white;
-    background-color: tomato;
+    background-color: #1DA1F2;
     padding: 3px 20px ;
     border-radius: 4px;
     margin-left: 120px;
 }
 #coursetext{
-    color:red;
+    color:#1DA1F2;
 }
 .courses{
     color:black;
@@ -72,9 +72,10 @@
     white-space: nowrap;
     overflow-x: auto;
 }
-.sidebar{
-    border: 1px solid red;
-    width:95%;
-    margin:10px auto;
-    
+.spinner{
+    width:10%;
+    position: absolute;
+    top: 37%;
+    left: 65%;
+    transform: translate(-50%, -50%);
 }
