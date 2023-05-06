@@ -5,21 +5,26 @@ export const AdminTable = ({ products }) => {
     <table>
       <thead>
         <tr>
-          <th>ID</th>
           <th>Name</th>
-          <th>Description</th>
-          <th>Price</th>
+          <th>Year_of_establishment</th>
+          <th>Students</th>
+          <th>Courses</th>
+          <th>Image</th>
+          <th>Rating</th>
         </tr>
       </thead>
       <tbody>
-        {products.map((product) => (
-          <tr key={product.id}>
-            <td>{product.id}</td>
-            <td>{product.name}</td>
-            <td>{product.description}</td>
-            <td>{product.price}</td>
-          </tr>
-        ))}
+        <tr key={products.id}>
+          <td>{products.name}</td>
+          <td>{products.year_of_establishment}</td>
+          <td>{products.students}</td>
+          <td>{products.courses}</td>
+          <td>{products.images[0]}</td>
+          <td>{products.rating}</td>
+          <td>
+            <button><Link to={`/admin/${id}`}>Edit</Link></button>
+          </td>
+        </tr>
       </tbody>
     </table>
   );
