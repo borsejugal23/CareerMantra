@@ -28,11 +28,11 @@ const SinglePage = () => {
             <h2>Tagline</h2>
             </div>
             <div className='mid'>
-                <div>
+                <div className='mid-img'>
                     <img src="https://cdn.pixabay.com/photo/2016/11/14/05/15/academic-1822683__480.jpg" alt="" />
                     {/* <img src="https://www.topuniversities.com/sites/default/files/college-of-william-and-mary_0.jpg" alt="" /> */}
                 </div>
-                <div>
+                <div className='mid-desc'>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, beatae? Quibusdam voluptatem facere unde numquam error sed amet ipsam, aspernatur velit sunt optio modi officia iure corporis quis recusandae natus!</p>
                 </div>
             </div>
