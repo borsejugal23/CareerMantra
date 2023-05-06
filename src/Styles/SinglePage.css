@@ -1,3 +1,32 @@
 .cont{
     text-align: center;
 }
+.top{
+    position: relative;
+    height: 400px;
+    object-fit: cover;
+}
+.top>img{
+ opacity: 60%;
+ height: 400px;
+}
+.top>p{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: blue;
+    text-shadow: 2px 2px 12px rgb(0, 0, 0);
+    font-size: xxx-large;
+    font-weight: bold;
+}
+.top>h2{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: rgb(249, 249, 253);
+    font-size: xx-large;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px black;
+}
