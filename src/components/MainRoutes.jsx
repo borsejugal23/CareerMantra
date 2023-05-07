@@ -6,8 +6,7 @@ import SinglePage from "../pages/SinglePage"
 import HomePage from "../pages/HomePage"
 
 import { AdminEditTable } from "./AdminParts/AdminEditTable"
-import { AdminForm } from "./AdminParts/AdminForm"
-import { AdminList } from "./AdminParts/AdminList"
+
 import SignUp from "../pages/SignUp"
 import Login from "../pages/Login"
 
@@ -21,8 +20,8 @@ export const MainRoutes=()=>{
     <Route path="/login" element={<Login/>}/>
     <Route path="/single/:id" element={<SinglePage/>}/>
     <Route path="/admin/${id}" element={<AdminEditTable />}/>
-    <Route path="/add-new" component={<AdminForm />} />
-    <Route path="/dashboard" component={<AdminList />} />
+    <Route path="/add-new" element={<AdminForm />} />
+    <Route path="/dashboard" element={<AdminList />} />
 
  
 
