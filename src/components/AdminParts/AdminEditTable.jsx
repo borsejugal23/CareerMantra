@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { editProduct } from "./action";
+import { editProduct } from "../../Redux/AdminReducer/action";
+
 
 export const AdminEditTable = () => {
   const [editData, setEditData] = useState({
-    name: name,
-    year_of_establishment: year_of_establishment,
-    students: students,
-    courses: courses,
-    images: images,
-    rating: rating,
+    name:"",
+    year_of_establishment: "",
+    students: "",
+    courses: "",
+    images: "",
+    rating: "",
   });
 
   const handleSubmit = (e) => {
