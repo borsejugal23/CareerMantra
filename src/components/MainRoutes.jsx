@@ -20,8 +20,8 @@ export const MainRoutes=()=>{
     <Route path="/login" element={<Login/>}/>
     <Route path="/single/:id" element={<SinglePage/>}/>
     <Route path="/admin/${id}" element={<AdminEditTable />}/>
-    <Route path="/add-new" element={<AdminForm />} />
-    <Route path="/dashboard" element={<AdminList />} />
+    {/* <Route path="/add-new" element={<AdminForm />} />
+    <Route path="/dashboard" element={<AdminList />} /> */}
 
  
 
