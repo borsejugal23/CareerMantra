@@ -1,13 +1,11 @@
 import React from "react";
-//import { PRODUCT_FAILURE, PRODUCT_REQUEST, GET_PRODUCT_SUCCESS, ADD_PRODUCT_SUCCESS, EDIT_PRODUCT_SUCCESS } from "./actionTypes";
+import { PRODUCT_FAILURE, PRODUCT_REQUEST, GET_PRODUCT_SUCCESS, ADD_PRODUCT_SUCCESS, EDIT_PRODUCT_SUCCESS } from "./actionTypes";
 import axios from "axios";
-import { ADD_PRODUCT_SUCCESS, GET_PRODUCT_SUCCESS, PRODUCT_FAILURE, PRODUCT_REQUEST } from "./actionTypes";
 
 const baseURL = "https://mu9umx-8080.csb.app/admin";
 
 export const getProduct = (dispatch) => {
   dispatch({ type: PRODUCT_REQUEST });
-
   axios
     .get(baseURL)
     .then((res) => {
