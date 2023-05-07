@@ -1,5 +1,5 @@
 import "../Styles/sidebar.css";
-import { HiFilter } from "@react-icons/all-files/hi/HiFilter"
+//import { HiFilter } from "@react-icons/all-files/hi/HiFilter"
 import { Checkbox,Stack,Text } from '@chakra-ui/react';
 import { Radio, RadioGroup } from '@chakra-ui/react';
 // import { useDispatch } from "react-redux";
@@ -68,7 +68,7 @@ export const Sidebar=()=>{
     return <div className="sidebar">
        <div>
         <div  className="postion">
-           <p className="postion-p"> <HiFilter/></p></div>
+           <p className="postion-p">logo</p></div>
         <h1 style={{fontSize:"20px"}}>Filter By</h1>
         
         <br />

@@ -2,44 +2,43 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-const Login = () => {
+const SignUp = () => {
   return (
     <DIV>
-    <div className='background'>
-        <img width={"100%"} src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="" />
-    </div>
-    
-    <div className='signup-page'>
-        <div className='signup-detail'>
-         <h1>Launch Your Career With <br /> <span>CAREER <span> MANTRA</span></span></h1>
-         <img width={"100%"} src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
-         <h3>
-            Create your account today and get benifited  <br/>to study in the dream universities  <br/> with the career mantra's support !
-         </h3>
+        <div className='background'>
+            <img width={"100%"} src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="" />
         </div>
-        <div className='signup'>
-            <h1>Career<span>Mantra</span>  <span> SignUp</span></h1>
-            
-            <br />
-            <label >Username</label>
-            <input type="text" placeholder='Enter your email'/>
-            <br />
-            <label >Password</label>
-            <input type="password" placeholder='Password' />
-            <br />
-            <button>Sign Up</button>
-            <span>Already have an account ? <Link className='log-btn' to='/login'>Login</Link> </span>
+        
+        <div className='signup-page'>
+            <div className='signup-detail'>
+             <h1>Launch Your Career With <br /> <span>CAREER <span> MANTRA</span></span></h1>
+             <img width={"100%"} src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+             <h3>
+                Create your account today and get benifited  <br/>to study in the dream universities  <br/> with the career mantra's support !
+             </h3>
+            </div>
+            <div className='signup'>
+                <h1>Career<span>Mantra</span>  <span> SignUp</span></h1>
+                
+                <br />
+                <label >Username</label>
+                <input type="text" placeholder='Enter your email'/>
+                <br />
+                <label >Password</label>
+                <input type="password" placeholder='Password' />
+                <br />
+                <button>Sign Up</button>
+                <span>Already have an account ? <Link className='log-btn' to='/login'>Login</Link> </span>
 
-      </div>
-    </div>
-      
-   
-</DIV>
+          </div>
+        </div>
+          
+       
+    </DIV>
   )
 }
 
-export default Login
-
+export default SignUp
 
 const DIV = styled.div`
  
