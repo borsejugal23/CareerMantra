@@ -33,7 +33,6 @@ const SignUp = () => {
           </div>
         </div>
           
-     
        
     </DIV>
   )
