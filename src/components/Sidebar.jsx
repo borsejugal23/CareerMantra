@@ -1,5 +1,5 @@
 import "../Styles/sidebar.css";
-//import { HiFilter } from "@react-icons/all-files/hi/HiFilter"
+import { HiFilter } from "@react-icons/all-files/hi/HiFilter"
 import { Checkbox,Stack,Text } from '@chakra-ui/react';
 import { Radio, RadioGroup } from '@chakra-ui/react';
 // import { useDispatch } from "react-redux";
@@ -13,10 +13,12 @@ export const Sidebar=()=>{
      const [country, setCountry] = useState(initialcountry||[]);
    const initialCategory=searchparams.getAll("category");
    const [category,setCategory]=useState(initialCategory||[])
-   //   const initilasort=searchparams.get("order")
-   //   const [order,setOrder]=useState(initilasort||"")
+     const initilasort=searchparams.get("order")
+     const [order,setOrder]=useState(initilasort||"")
    const initialcity=searchparams.getAll("city");
    const [city,setCity]=useState(initialcity||[])
+   const initialownership=searchparams.getAll("ownership");
+   const [ownership,setOwnership]=useState(initialownership||[])
 
 
    const filterByCategory=(e)=>{
@@ -56,19 +58,33 @@ export const Sidebar=()=>{
       setCity(newCity)
       // console.log(category)
    }
+   const filterByOwnership=(e)=>{
+      const {value}=e.target
+      let newOwnership=[...ownership];
+      if (newOwnership.includes(value)){
+         newOwnership=newOwnership.filter((e)=>e!==value)
+      }
+      else{
+         newOwnership.push(value)
+      }
+      setOwnership(newOwnership)
+      // console.log(category)
+   }
    useEffect(()=>{
       let params={
          category,
-         country
+         country,
+         city,
+         ownership
        }
-      //  order && (params.order=order)
+       order && (params.order=order)
        setSearchparams(params)
-     },[category,country])
+     },[category,country,city,ownership,order])
 
     return <div className="sidebar">
        <div>
         <div  className="postion">
-           <p className="postion-p">logo</p></div>
+           <p className="postion-p"> <HiFilter/></p></div>
         <h1 style={{fontSize:"20px"}}>Filter By</h1>
         
         <br />
@@ -109,22 +125,22 @@ export const Sidebar=()=>{
             <div>
             <Text fontSize='lg'>City</Text>
                 <Stack pl={6} mt={1} spacing={1}>
-                    <Checkbox value={"India"} isChecked={country.includes("India")} onChange={filterByCity}>
+                    <Checkbox value={"Pasadena"} isChecked={city.includes("Pasadena")} onChange={filterByCity}>
                     Pasadena
                     </Checkbox>
-                    <Checkbox value={"India"} isChecked={country.includes("India")} onChange={filterByCity}>
+                    <Checkbox value={"Cambridge"} isChecked={city.includes("Cambridge")} onChange={filterByCity}>
                     Cambridge
                     </Checkbox>
-                    <Checkbox value={"India"} isChecked={country.includes("India")} onChange={filterByCity}>
+                    <Checkbox value={"Pune"} isChecked={city.includes("Pune")} onChange={filterByCity}>
                       Pune
                     </Checkbox>
-                    <Checkbox value={"India"} isChecked={country.includes("India")} onChange={filterByCity}>
-                       Mumbai
+                    <Checkbox value={"Nashik"} isChecked={city.includes("Nashik")} onChange={filterByCity}>
+                       Nashik
                     </Checkbox>
-                    <Checkbox value={"India"} isChecked={country.includes("India")} onChange={filterByCity}>
+                    <Checkbox value={"Bangalore"} isChecked={city.includes("Bangalore")} onChange={filterByCity}>
                        Bangalore
                     </Checkbox>
-                    <Checkbox value={"India"} isChecked={country.includes("India")} onChange={filterByCity}>
+                    <Checkbox value={"Tokyo"} isChecked={city.includes("Tokyo")} onChange={filterByCity}>
                        Tokyo
                     </Checkbox>
                 </Stack>
@@ -134,10 +150,10 @@ export const Sidebar=()=>{
             <div>
             <Text fontSize='lg'>Ownership</Text>
                 <Stack pl={6} mt={1} spacing={1}>
-                    <Checkbox>
+                    <Checkbox value={"private"} isChecked={ownership.includes("private")} onChange={filterByOwnership}>
                        Private
                     </Checkbox>
-                    <Checkbox>
+                    <Checkbox value={"Government"} isChecked={ownership.includes("Government")} onChange={filterByOwnership}>
                        Government
                     </Checkbox>
                 </Stack>
@@ -148,11 +164,13 @@ export const Sidebar=()=>{
        <h1 style={{fontSize:"20px"}}>Sort By Rating</h1>
         <br />
        <div className="shortdiv">
-            <RadioGroup defaultValue='1'>
+            <RadioGroup defaultValue=''>
             <Stack>
-                <Radio value='3'>Low to High</Radio>
-                <Radio value='4'>High to Low</Radio>
+               <Radio value='' isChecked={order === null} onChange={(e)=>setOrder(e.target.value)}>ALL</Radio>
+               <Radio value='asc' isChecked={order==="asc"} onChange={(e)=>setOrder(e.target.value)}>Low to High</Radio>
+               <Radio value='desc' isChecked={order==="desc"} onChange={(e)=>setOrder(e.target.value)}>High to Low</Radio>
             </Stack>
+
             
             </RadioGroup>
        </div>
