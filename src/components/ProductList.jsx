@@ -22,14 +22,16 @@ export const ProductList=()=>{
         params:{
           country:serchparams.getAll("country"),
           category:serchparams.getAll("category"),
-        //   _sort:serchparams.get("order")&&"price",
-        //   _order:serchparams.get("order")
+          place:serchparams.getAll("city"),
+          ownership:serchparams.getAll("ownership"),
+          _sort:serchparams.get("order")&&"rating",
+          _order:serchparams.get("order")
         },
        }
     // console.log(products)
     useEffect(()=>{
         dispatch(getProducts(queryparams))
-    },[location.search])
+    },[location.key])
     return <div className="combineofsidebarandproduct">
         <div className="Sidebar">
             <Sidebar/>
