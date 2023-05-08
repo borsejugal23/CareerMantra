@@ -2,17 +2,20 @@
 
 import  Navbar  from './components/Navbar'
 import Footer from './components/Footer';
-import { MainRoutes } from "./components/MainRoutes";
+import { MainRoutes } from "../src/components/MainRoutes";
+// import { ProductList } from './components/ProductList';
 
 
 
 function App() {
   return (
-    <div className="App">
-
+    <div >
+  
     <Navbar />
-    <MainRoutes/>
+    <MainRoutes />
+    
     <Footer />
+
     </div>
   );
 }
