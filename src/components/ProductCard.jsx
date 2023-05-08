@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../Styles/Products.css";
 export const ProductCart=(
     {
@@ -11,9 +12,10 @@ export const ProductCart=(
         flag,
         images,
         name,
-        brochure
+        brochure,
+        id
     })=>{
-    // console.log(category,year_of_establishment,place)
+    // console.log(id)
     return <div className="card">
        <div style={{width:"30%"}}>
          <img src={images[0]} alt="place" className="university_img"/>
@@ -43,7 +45,7 @@ export const ProductCart=(
         <div className="buttondiv">
             <p><button className="brochurebtn"><b>Brochure</b></button></p>
             <br />
-            <p><button className="visitbtn"><b>Visit</b></button></p>
+            <Link to={`/product/${id}`}><p><button className="visitbtn"><b>Visit</b></button></p></Link>
             <br />
             <br />
             <br />

@@ -1,53 +1,53 @@
-import React from 'react';
-import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react';
+import React from "react";
+import { Box, IconButton, useBreakpointValue } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
-import { BiLeftArrowAlt, BiRightArrowAlt,SlArrowLeft ,SlArrowRight } from 'react-icons/sl';
+import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 // And react-slick as our Carousel Lib
-import Slider from 'react-slick';
+import Slider from "react-slick";
+// import { img7, img8, img9 } from "./img";
+// import { img1, img2, img3, img4, img5, img6 } from "./img";
 
 // Settings for the slider
 const settings = {
   dots: true,
   arrows: false,
+  fade: true,
   infinite: true,
   autoplay: true,
-  speed: 500,
-  autoplaySpeed: 2500,
+  speed: 1800,
+  autoplaySpeed: 1500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  
 };
 
 export default function Carousel() {
   // As we have used custom buttons, we need a reference variable to
   // change the state
-  const [slider, setSlider] = React.useState(null);
+  const [slider, setSlider] = React.useState();
 
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
-  const top = useBreakpointValue({ base: '90%', md: '50%' });
-  const side = useBreakpointValue({ base: '30%', md: '10px' });
+  const top = useBreakpointValue({ base: "90%", md: "50%" });
+  const side = useBreakpointValue({ base: "30%", md: "10px" });
 
   // These are the images used in the slide
   const cards = [
-    'https://images.unsplash.com/photo-1583373834259-46cc92173cb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dW5pdmVyc2l0eSUyMGNhbXB1c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60","https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVuaXZlcnNpdHklMjBjYW1wdXN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"',
-    'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fa7bfdf05-ad0e-4c24-ab48-7ff64e9115b8.jpg&w=1920&q=75',
-   'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F326d1e4e-1c75-4b56-8533-0db3902a5815.jpg&w=1920&q=75',
-   'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F1e69c5f7-2df9-4c42-bf08-22b6b68779e0.jpg&w=1920&q=75',
-   'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F34d52684-19de-435e-bbde-86d09bf08c19.jpg&w=1920&q=75',
-    'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F069d0c1c-f78c-4d80-94f9-e65f3bbdda73.jpg&w=1920&q=75',
-'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F0886c9f4-a521-4ff2-9ec7-6a5947860753.jpg&w=1920&q=75',
-'https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Ffeb81cd7-cb89-4d40-8b45-b2f5bfe406d9.jpg&w=1920&q=75',
-
-];
-
+    "https://www.alumni.cam.ac.uk/sites/www.alumni.cam.ac.uk/files/styles/flexslider_full/public/images/articles/main/cambridge_library.jpg?itok=eZIUHy9B",
+    "https://i2-prod.cambridge-news.co.uk/news/cambridge-news/article24183175.ece/ALTERNATES/s1200d/0_JS238376993.jpg",
+    "https://www.visitcambridge.org/app/uploads/2021/11/corpus-christi-1600x0-c-default.jpg",
+  ];
+//https://www.ox.ac.uk/sites/files/oxford/styles/ow_large_feature/s3/field/field_image_main/b_AllSoulsquad.jpg?itok=tTcH-5ix
   return (
     <Box
-    marginTop={'108px'}
-      position={'relative'}
-      height={'350px'}
-      width={'100%'}
-      overflow={'hidden'}>
+      position={"relative"}
+      height={"450px"}
+      borderWidth="0x"
+      overflow="hidden"
+      margin={"auto"}
+      mt={0}
+      width={"100%"}
+      // border={"1px solid red"}
+    >
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
@@ -63,41 +63,51 @@ export default function Carousel() {
       {/* Left Icon */}
       <IconButton
         aria-label="left-arrow"
-      //  colorScheme="messenger"
-       // borderRadius="full"
+        colorScheme="white"
+        color="black"
+        backgroundColor="white"
+        borderRadius="full"
         position="absolute"
         left={side}
         top={top}
-        transform={'translate(0%, -50%)'}
+        transform={"translate(0%, -50%)"}
         zIndex={2}
-        onClick={() => slider?.slickPrev()}>
-        <SlArrowLeft />
+        onClick={() => slider?.slickPrev()}
+      >
+        <BiLeftArrowAlt />
       </IconButton>
+      
       {/* Right Icon */}
       <IconButton
         aria-label="right-arrow"
-       // colorScheme="messenger"
-       // borderRadius="full"
+        colorScheme="black"
+        color="black"
+        backgroundColor="white"
+        padding="10px"
+        borderRadius="full"
         position="absolute"
         right={side}
         top={top}
-        transform={'translate(0%, -50%)'}
+        transform={"translate(0%, -50%)"}
         zIndex={2}
-        onClick={() => slider?.slickNext()}>
-        <SlArrowRight />
+        onClick={() => slider?.slickNext()}
+      >
+        <BiRightArrowAlt />
       </IconButton>
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((url, index) => (
           <Box
             key={index}
-
-            height={'300px'}
+            height={"450px"}
+            padding="0"
+            marginTop=""
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
-            backgroundSize="cover"
+            backgroundSize="contain"
             backgroundImage={`url(${url})`}
+           
           />
         ))}
       </Slider>

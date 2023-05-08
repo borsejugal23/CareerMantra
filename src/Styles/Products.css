@@ -61,6 +61,10 @@
     border-radius: 4px;
     margin-left: 120px;
 }
+.brochurebtn:hover,
+.visitbtn:hover{
+    background-color: #1877F2;
+}
 #coursetext{
     color:#1DA1F2;
 }
@@ -75,7 +79,7 @@
 .spinner{
     width:10%;
     position: absolute;
-    top: 37%;
+    top: 25%;
     left: 65%;
     transform: translate(-50%, -50%);
 }
