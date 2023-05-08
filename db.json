@@ -246,21 +246,6 @@
         "ownership": "public,Government",
         "rating": 4.2,
         "category": "university"
-      },
-      {
-        "id": 4,
-        "year_of_establishment": "",
-        "name": "",
-        "country": "",
-        "faculty": "",
-        "students": "",
-        "courses": "",
-        "images": [],
-        "flag": "",
-        "ownership": "",
-        "rating": "",
-        "place": "",
-        "category": ""
       }
     ]
   }
