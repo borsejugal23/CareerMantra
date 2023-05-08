@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
 import axios from "axios";
+import AdminSidebar from "../../components/AdminParts/AdminSidebar";
 
 export default function AdminUser () {
     const {id} = useParams();
@@ -41,6 +42,8 @@ export default function AdminUser () {
     };
    
     return (
+        <DIV>
+            <AdminSidebar />
         <ItemContainer>
             <ItemTitleContainer>
                 <h1>Edit Details</h1>
@@ -148,8 +151,13 @@ export default function AdminUser () {
             </UpdateUser>
         </UserContainer>
     </ItemContainer>
+    </DIV>
 );
     }
+
+    const DIV = styled.div`
+    display:flex
+    `
 
 const UserContainer = styled.div`
     display: flex;

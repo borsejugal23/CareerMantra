@@ -10,7 +10,7 @@ const AdminSidebar = () => {
                 <SidebarMenu>
                     <SidebarTitle>Dashboard</SidebarTitle>
                     <SidebarList>
-                       <Link to="/" className='link'>
+                       <Link to="/admin" className='link'>
                             <SidebarListItem>
                                 <MyLineStyle />
                                 Home
@@ -35,10 +35,10 @@ const AdminSidebar = () => {
                                 Universities
                             </SidebarListItem>
                             </Link>
-                            <Link to="/products" className='link'>
+                            <Link to="/newUser" className='link'>
                             <SidebarListItem>
                                 <MyStorefront />
-                                Products
+                                Add University
                             </SidebarListItem>
                             </Link>
                         <SidebarListItem>

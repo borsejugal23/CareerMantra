@@ -4,7 +4,8 @@ import styled from "styled-components";
 
 
 export const AdminFeatured = ({userData}) => {
-    
+
+
     const studentTotal = userData.reduce((total, el) => {
       const Students = el.students;
       const totalStudents = parseInt(Students);
@@ -16,11 +17,25 @@ export const AdminFeatured = ({userData}) => {
       const totalFaculty = parseInt(Faculty);
       return total + totalFaculty;
     }, 0);
+    
+    console.log("stu",studentTotal)
+    console.log("fac",facultyTotal)
 
+    const totalUniversities = userData.length;
     
   
     return (
       <FeaturedContainer>
+        <FeaturedItem>
+          <FeaturedTitle>Universities</FeaturedTitle>
+          <FeaturedMoneyContainer>
+            <FeaturedMoney>{totalUniversities}</FeaturedMoney>
+            <FeaturedMoneyRate>
+              <FeaturedIcon up={true} />
+            </FeaturedMoneyRate>
+          </FeaturedMoneyContainer>
+          <FeaturedSub>Total number of Universities</FeaturedSub>
+        </FeaturedItem>
         <FeaturedItem>
           <FeaturedTitle>Students</FeaturedTitle>
           <FeaturedMoneyContainer>
@@ -47,12 +62,14 @@ export const AdminFeatured = ({userData}) => {
 
   const FeaturedContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  cursor: pointer;
 `;
 
 const FeaturedItem = styled.div`
   flex: 1;
-  margin: 0px 20px;
+  margin: 10px 20px;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);

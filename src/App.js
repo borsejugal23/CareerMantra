@@ -9,12 +9,13 @@ import { AdminMainRoutes } from './pages/AdminPages/AdminMainRoutes';
 
 function App() {
   return (
-    <div className="App">
+    <div >
   
     <Navbar />
     <MainRoutes/>
    {/* <AdminMainRoutes/> */}
     <Footer />
+
     </div>
   );
 }

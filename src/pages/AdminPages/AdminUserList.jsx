@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { DeleteOutline } from '@material-ui/icons';
 import axios from 'axios';
+import AdminSidebar from '../../components/AdminParts/AdminSidebar';
 
 const AdminUserList = () => {
   const [data, setData] = useState([]);
   const fetchData = async () => {
     try {
       const response = await axios.get('https://mu9umx-8080.csb.app/admin');
-      // console.log("res",response.data)
+      console.log("res",response.data)
       setData(response.data);
     } catch (error) {
       console.error(error);
@@ -37,7 +38,7 @@ const AdminUserList = () => {
     {
       field: 'user',
       headerName: 'User',
-      width: 300,
+      width: 400,
       renderCell: (params) => {
         return (
           <ListItem>
@@ -47,21 +48,21 @@ const AdminUserList = () => {
         );
       }
     },
-    { field: 'country', headerName: 'Country', width: 200 },
+    { field: 'country', headerName: 'Country', width: 100 },
     {
       field: 'students',
       headerName: 'Students',
-      width: 120
+      width: 150
     },
     {
       field: 'rating',
       headerName: 'Rating',
-      width: 160
+      width: 150
     },
     {
       field: 'action',
       headerName: 'Action',
-      width: 150,
+      width: 200,
       renderCell: (params) => {
         return (
           <>
@@ -76,7 +77,9 @@ const AdminUserList = () => {
   ];
 
   return (
-    <TheList>
+    <DIV>
+    <AdminSidebar />
+    <TheList >
       <DataGrid
         rows={data}
         disableSelectionOnClick
@@ -85,13 +88,19 @@ const AdminUserList = () => {
         checkboxSelection
       />
     </TheList>
+    </DIV>
   );
 };
 
 export default AdminUserList;
 
+const DIV = styled.div`
+display:flex
+`
 export const TheList = styled.div`
   flex: 4;
+  height: 650;
+  width: '100%';
 `;
 export const ListItem = styled.div`
   display: flex;
@@ -107,7 +116,7 @@ export const ListImage = styled.img`
 export const EditButton = styled.button`
   border: none;
   border-radius: 10px;
-  padding: 5px 10px;
+  padding: 20px 20px;
   background-color: ${(props) => (props.primary ? 'DarkMagenta' : 'SeaGreen')};
   color: white;
   cursor: pointer;

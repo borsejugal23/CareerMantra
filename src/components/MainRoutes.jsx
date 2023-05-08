@@ -1,11 +1,10 @@
-import { Route, Routes } from "react-router-dom"
+import { Routes,Route } from "react-router-dom"
+
 import { ProductList } from "./ProductList"
 import CartPage from "../pages/CartPage"
 import SinglePage from "../pages/SinglePage"
 
 import HomePage from "../pages/HomePage"
-
-import { AdminEditTable } from "./AdminParts/AdminEditTable"
 
 import SignUp from "../pages/SignUp"
 import Login from "../pages/Login"
