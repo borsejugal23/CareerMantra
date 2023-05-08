@@ -5,7 +5,9 @@ import { useEffect } from "react";
 import { getProducts } from "../Redux/ProductReducer/action";
 import { ProductCart } from "./ProductCard";
 import "../Styles/Products.css"
-import { useLocation, useSearchParams } from "react-router-dom";
+import { useLocation,useSearchParams } from "react-router-dom";
+
+
 export const ProductList=()=>{
     const {isLoading,products,isError}=useSelector((store)=>{
         return {

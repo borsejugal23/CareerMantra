@@ -6,6 +6,7 @@ import { AdminFeatured } from "../../components/AdminParts/AdminFeatured";
 import { getProduct } from "../../Redux/AdminReducer/action";
 
 
+
 export const AdminHomePage = () => {
 
     const dispatch = useDispatch();
@@ -17,10 +18,12 @@ export const AdminHomePage = () => {
   },[])
 
   return (
+   
     <HomeContainer>
       <AdminFeatured userData={userData} />
       <AdminChart data={userData} title="user Analytic" grid dataKey="students" />
     </HomeContainer>
+    
   );
 };
 

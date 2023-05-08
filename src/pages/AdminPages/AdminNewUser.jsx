@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import styled from "styled-components";
+import AdminSidebar from '../../components/AdminParts/AdminSidebar';
 import { addProduct } from '../../Redux/AdminReducer/action';
 
 const initialState = {
@@ -10,7 +11,7 @@ const initialState = {
     faculty: "",
     students: "",
     courses: "",
-    images: "",
+    images: [],
     flag: "",
     rating: "",
     place: "",
@@ -39,6 +40,8 @@ const [formData, setFormData] = useState(initialState);
 
 
     return (
+        <DIV>
+            <AdminSidebar />
         <TheList>
             <h1>New User</h1>
             <UserForm onSubmit={handleSubmit}>
@@ -103,9 +106,14 @@ const [formData, setFormData] = useState(initialState);
                 <UserButton type='submit'>Create</UserButton>
             </UserForm>
         </TheList>
+        </DIV>
     )
 };
 export default AdminNewUser;
+
+const DIV = styled.div`
+display:flex
+`
 
 export const TheList = styled.div`
     flex: 4;
