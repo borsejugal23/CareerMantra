@@ -88,7 +88,7 @@ export const Sidebar=()=>{
         <h1 style={{fontSize:"20px"}}>Filter By</h1>
         
         <br />
-        <br />
+
         <div>
            <Text fontSize='lg' className="testing">Category</Text>
                 <Stack pl={6} mt={1} spacing={1}>
@@ -158,9 +158,9 @@ export const Sidebar=()=>{
                     </Checkbox>
                 </Stack>
             </div>
-       </div>
+            <hr />
        <br />
-       <hr />
+            <div>
        <h1 style={{fontSize:"20px"}}>Sort By Rating</h1>
         <br />
        <div className="shortdiv">
@@ -170,13 +170,10 @@ export const Sidebar=()=>{
                <Radio value='asc' isChecked={order==="asc"} onChange={(e)=>setOrder(e.target.value)}>Low to High</Radio>
                <Radio value='desc' isChecked={order==="desc"} onChange={(e)=>setOrder(e.target.value)}>High to Low</Radio>
             </Stack>
-
-            
             </RadioGroup>
        </div>
-       <br />
-       <br />
-       <br />
-
+       </div>
+      <br />
+       </div>
     </div>
 }
