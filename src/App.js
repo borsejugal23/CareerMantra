@@ -13,6 +13,7 @@ function App() {
     <Navbar />
     <MainRoutes/>
     <Footer />
+    
     </div>
   );
 }
