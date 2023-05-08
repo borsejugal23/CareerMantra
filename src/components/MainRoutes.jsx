@@ -5,6 +5,7 @@ import { ProductList } from "./ProductList"
 import SinglePage from "../pages/SinglePage"
 
 import HomePage from "../pages/HomePage"
+import AdminUserList from "../pages/AdminPages/AdminUserList"
 
 
 
@@ -15,17 +16,13 @@ export const MainRoutes=()=>{
     <Route path="/product" element={<ProductList/>}/>
     {/* <Route path="/cart" element={<CartPage />}/> */}
 
-   
+   <Route path="/admin" element={<AdminUserList/>}/>
    
 
 
     <Route path="/single/:id" element={<SinglePage/>}/>
 
    
-    <Route path="/admin/${id}" element={<AdminEditTable />}/>
-    <Route path="/add-new" component={<AdminForm />} />
-    <Route path="/dashboard" component={<AdminList />} />
-
  
 
  </Routes>
