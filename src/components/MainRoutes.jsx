@@ -1,14 +1,17 @@
-import { Route, Routes } from "react-router-dom"
+import { Routes,Route } from "react-router-dom"
+
 import { ProductList } from "./ProductList"
 import CartPage from "../pages/CartPage"
 import SinglePage from "../pages/SinglePage"
 
 import HomePage from "../pages/HomePage"
 
-import { AdminEditTable } from "./AdminParts/AdminEditTable"
-
 import SignUp from "../pages/SignUp"
 import Login from "../pages/Login"
+import AdminUserList from "../pages/AdminPages/AdminUserList"
+import AdminNewUser from "../pages/AdminPages/AdminNewUser"
+import AdminUser from "../pages/AdminPages/AdminUser"
+import { Adminpage } from "../pages/AdminPages/AdminPage"
 
 
 export const MainRoutes=()=>{
@@ -19,11 +22,12 @@ export const MainRoutes=()=>{
     <Route path="/sign-up" element={<SignUp/>}/>
     <Route path="/login" element={<Login/>}/>
     <Route path="/single/:id" element={<SinglePage/>}/>
-    <Route path="/admin/${id}" element={<AdminEditTable />}/>
-    {/* <Route path="/add-new" element={<AdminForm />} />
-    <Route path="/dashboard" element={<AdminList />} /> */}
-
- 
+    <Route path="/admin" element={<Adminpage/>} />
+    <Route path="/users" element={<AdminUserList />} />
+    <Route path="/user/:id" element={<AdminUser />} />
+    <Route path="/newUser" element={<AdminNewUser />} />
+        
+     
 
  </Routes>
 }
