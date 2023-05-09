@@ -9,17 +9,30 @@ import { Adminpage } from "../pages/AdminPages/AdminPage";
 import  AdminUserList  from "../pages/AdminPages/AdminUserList";
 import  AdminUser  from "../pages/AdminPages/AdminUser";
 import  AdminNewUser  from "../pages/AdminPages/AdminNewUser";
+import PrivateRoute from "./PrivateRoute"
 
 
 export const MainRoutes=()=>{
  return   <Routes>
     <Route path="/" element={<HomePage />} /> 
     <Route path="/product" element={<ProductList/>}/>
-    <Route path="/product/:id" element={<SinglePage/>}/>
+    <Route path="/product/:id" element={
+      <PrivateRoute>
+    <SinglePage/>
+    </PrivateRoute>
+    }/>
     <Route path="/sign-up" element={<SignUp/>}/>
     <Route path="/login" element={<Login/>}/>
-    <Route path="/single/:id" element={<SinglePage/>}/>
-    <Route path="/admin" element={<Adminpage />} />
+    <Route path="/single/:id" element={
+     <PrivateRoute>
+    <SinglePage/>
+    </PrivateRoute>
+    }/>
+    <Route path="/admin" element={
+      <PrivateRoute>
+    <Adminpage />
+    </PrivateRoute>
+    } />
     <Route path="/users" element={<AdminUserList />} />
     <Route path="/user/:id" element={<AdminUser />} />
     <Route path="/newUser" element={<AdminNewUser />} />
