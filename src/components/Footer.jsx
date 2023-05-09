@@ -2,6 +2,8 @@ import { SimpleGrid,Box } from '@chakra-ui/react'
 import React from 'react'
 import {TiSocialFacebook,TiSocialTwitter} from 'react-icons/ti'
 import { BsInstagram} from "react-icons/bs"
+import { Link } from 'react-router-dom'
+
 
 const Footer = () => {
   return (
@@ -32,16 +34,22 @@ const Footer = () => {
             </Box>
             <Box>
                 <h2 style={{fontFamily:"sans-serif",fontWeight:"bolder"}}>College Finder Group</h2>
-                <p style={{fontSize:"12px",fontFamily:"sans-serif"}}>studyinternational.com</p>
+                <u style={{fontSize:"12px",fontFamily:"sans-serif",color:"#1DA1F2"}}><Link to="https://studyinternational.com/" >studyinternational.com</Link></u>
                 <p style={{fontSize:"12px",fontFamily:"sans-serif"}}>scholarshipinternational.com</p>
-                <p style={{fontSize:"12px",fontFamily:"sans-serif"}}>collegeinternational.com</p>
+                <u style={{fontSize:"12px",fontFamily:"sans-serif",color:"#1DA1F2"}}><Link to="https://sell.sawbrokers.com/domain/CollegeInternational.com/" >collegeinternational.com</Link></u>
             </Box>
             <Box>
                 <h2 style={{fontFamily:"sans-serif",fontWeight:"bolder"}}>Let's connet</h2>
-                <div style={{display:"flex",width:"100%"}} >
-                <TiSocialFacebook size={"25px"} color='blueandblack' margin={"10px"} />
-                <TiSocialTwitter size={"25px"} color='blue' margin={"10px"}/>
-                <BsInstagram  size={"25px"} color='red' margin={"10px"} />
+                <div style={{display:"flex",width:"100%",padding:"10px"}} >
+                  <Link to="https://www.facebook.com/login/" >
+                  <TiSocialFacebook size={"25px"} color='#166FE5' />
+                  </Link>
+                <Link to="https://twitter.com/i/flow/login" >
+                <TiSocialTwitter size={"25px"} color='#1DA1F2' />
+                </Link>
+                <Link to="https://www.instagram.com/accounts/login/" >
+                <BsInstagram  size={"25px"} color='#F0019C'  />
+                </Link>
                 </div>
                 <p style={{fontSize:"12px",fontFamily:"sans-serif"}}>Ten:8(800)25325323</p>
                 <p style={{fontSize:"12px",fontFamily:"sans-serif"}}>Email:eduera@gmail.com</p>

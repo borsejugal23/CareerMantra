@@ -1,6 +1,8 @@
 import React from 'react'
 import Carousel from '../components/carousel/carousel1'
 import { SimpleGrid,Box } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
 const HomePage = () => {
   return (
@@ -16,8 +18,8 @@ const HomePage = () => {
                     <li style={{fontFamily:"serif",wordSpacing:"0.5"}}>all registration remotely</li>
                 </ul>
             </div>
-            <div style={{width:"50%"}}>
-                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHVuaXZlcnNpdHl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="" style={{height:"250px",width:"100%"}} />
+            <div style={{width:"100%"}}>
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHVuaXZlcnNpdHl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="" style={{width:"100%"}} />
             </div>
       </div>
       <div style={{marginTop:"50px"}}>
@@ -42,7 +44,7 @@ const HomePage = () => {
       <h3>language</h3>
       </div>
       <div style={{marginTop:"50px",marginLeft:"180px"}}>
-        <button style={{height:"40px",width:"200px",fontSize:"15px",color:"white",backgroundColor:"#1565C0",display:"block",marginTop:"10px"}}>Higher image</button>
+        <button style={{height:"40px",width:"200px",fontSize:"15px",color:"white",backgroundColor:"#1565C0",display:"block",marginTop:"10px",cursor:"pointer"}}>Higher image</button>
         <button style={{height:"40px",width:"200px",fontSize:"15px",border:"1px solid gray",display:"block",marginTop:"10px"}}> Secondary education</button>
         <button style={{height:"40px",width:"200px",fontSize:"15px",border:"1px solid gray",display:"block",marginTop:"10px"}}>Language classes</button>
       </div>
@@ -53,42 +55,50 @@ const HomePage = () => {
         <Box>Language classes</Box>
       </SimpleGrid>
       <SimpleGrid columns={4} spacing={5} marginLeft={85} marginTop={20} fontWeight={400}>
-        <Box boxShadow='md'rounded='md' width={200} >
+
+        <Link to="https://www.mq.edu.au/">
+        <Box boxShadow='md'rounded='md' width={200} textAlign={"center"}>
+
+       
+
             <img src="https://images.unsplash.com/photo-1583373834259-46cc92173cb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dW5pdmVyc2l0eSUyMGNhbXB1c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >Austria</h1>
             <h5 >27 faculties</h5>
         </Box>
-        <Box boxShadow='md'rounded='md' width={200}>
+        </Link>
+        <Link to="https://www.unimelb.edu.au/">
+        <Box boxShadow='md'rounded='md' width={200} textAlign={"center"} >
         <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVuaXZlcnNpdHklMjBjYW1wdXN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >Australia</h1>
             <h5 >34 faculties</h5>
         </Box>
-        <Box boxShadow='md'rounded='md' width={200}>
+        </Link>
+        <Box boxShadow='md'rounded='md' width={200} textAlign={"center"}>
         <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >Belgium</h1>
             <h5 >28 faculties</h5>
         </Box>
-        <Box boxShadow='md'rounded='md' width={200}>
+        <Box boxShadow='md'rounded='md' width={200} textAlign={"center"}>
         <img src="https://images.unsplash.com/photo-1542868796-20f2ddc9d41f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHN0dWRlbnRzJTIwdGFsa2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >United Kingdom</h1>
             <h5 >43 faculties</h5>
         </Box>
-        <Box boxShadow='md'rounded='md' width={200}>
+        <Box boxShadow='md'rounded='md' width={200} textAlign={"center"}>
         <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >Germany</h1>
             <h5 >56 faculties</h5>
         </Box>
-        <Box boxShadow='md'rounded='md' width={200}>
+        <Box boxShadow='md'rounded='md' width={200} textAlign={"center"}>
         <img src="https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >Denmark</h1>
             <h5 >42 faculties</h5>
         </Box>
-        <Box boxShadow='md'rounded='md' width={200}>
+        <Box boxShadow='md'rounded='md' width={200} textAlign={"center"}>
         <img src="https://images.unsplash.com/20/cambridge.JPG?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >Italy</h1>
             <h5 >40 faculties</h5>
         </Box>
-        <Box boxShadow='md'rounded='md' width={200}>
+        <Box boxShadow='md'rounded='md' width={200} textAlign={"center"}>
         <img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHVuaXZlcnNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >Spain</h1>
             <h5 >52 faculties</h5>
@@ -122,53 +132,53 @@ const HomePage = () => {
                 
                 <SimpleGrid columns={3} spacing={5} marginLeft={100} marginTop={5} fontWeight={400}>
                     <Box height="150px" border="1px" borderColor="lightblue" color="#03A9F4" padding="3px">
-                        <p>Visa</p>
-                        <p>A visa is issued for the purpose of obtaining</p>
-                        <p>Secondary,general or vocational education abroad</p>
-                        <p>Also on a student visa, you can take language courses</p>
-                        <p>or advance training courses</p>
+                        <p style={{color:"black",marginLeft:"40%",fontSize:"20px"}}>VISA</p>
+                        <p style={{marginLeft:"5%"}}>A visa is issued for the purpose of obtaining</p>
+                        <p style={{marginLeft:"5%"}}>Secondary,general or vocational education abroad</p>
+                        <p style={{marginLeft:"5%"}}>Also on a student visa, you can take language courses</p>
+                        <p style={{marginLeft:"5%"}}>or advance training courses</p>
                     </Box>
                     <Box height="150px" border="1px" borderColor="lightblue" color="#03A9F4" padding="3px">
-                    <p>Insurance</p>
-                        <p>Insurance in the State line Company</p>
-                        <p>Provides an opportunity to pay</p>
-                        <p>Hospital and healthcare facility, analysis</p>
-                        <p>and diagnostics</p>
+                    <p style={{color:"black",marginLeft:"40%",fontSize:"20px"}}>Insurance</p>
+                        <p style={{marginLeft:"5%"}}>Insurance in the State line Company</p>
+                        <p style={{marginLeft:"5%"}}>Provides an opportunity to pay</p>
+                        <p style={{marginLeft:"5%"}}>Hospital and healthcare facility, analysis</p>
+                        <p style={{marginLeft:"5%"}}>and diagnostics</p>
                     </Box>
                     <Box height="150px" border="1px" borderColor="lightblue" color="#03A9F4" padding="3px">
-                    <p>Accompanying a student</p>
-                        <p>Full support of the student in the process </p>
-                        <p>of admission from the selection of an educational</p>
-                        <p>institution for the graduation to the receipt</p>
-                        <p>of a student visa</p>
+                    <p style={{color:"black",marginLeft:"20%",fontSize:"20px"}}>Accompanying a student</p>
+                        <p style={{marginLeft:"5%"}}>Full support of the student in the process </p>
+                        <p style={{marginLeft:"5%"}}>of admission from the selection of an educational</p>
+                        <p style={{marginLeft:"5%"}}>institution for the graduation to the receipt</p>
+                        <p style={{marginLeft:"5%"}}>of a student visa</p>
                     </Box>
                     <Box height="150px" border="1px" borderColor="lightblue" color="#03A9F4" padding="3px">
-                    <p>Admission to Top Universities</p>
-                        <p>all stages of admission are more important from</p>
-                        <p>the choice of educational qualification to the </p>
-                        <p>issuance of a visa. Therefore, we want to go </p>
-                        <p>through Foodie numbers with you, ecomona</p>
+                    <p style={{color:"black",marginLeft:"15%",fontSize:"20px"}}>Admission to Top Universities</p>
+                        <p style={{marginLeft:"5%"}}>all stages of admission are more important from</p>
+                        <p style={{marginLeft:"5%"}}>the choice of educational qualification to the </p>
+                        <p style={{marginLeft:"5%"}}>issuance of a visa. Therefore, we want to go </p>
+                        <p style={{marginLeft:"5%"}}>through Foodie numbers with you, ecomona</p>
                     </Box>
                     <Box height="150px" border="1px" borderColor="lightblue" color="#03A9F4" padding="3px">
-                    <p>Preparation for exam</p>
-                        <p>A visa is issued for the purpose of obtaining</p>
-                        <p>Secondary,general or vocational education abroad</p>
-                        <p>Also on a student visa, you can take language courses</p>
-                        <p>or advance training courses</p>
+                    <p style={{color:"black",marginLeft:"40%",fontSize:"20px"}}>Preparation for exam</p>
+                        <p style={{marginLeft:"5%"}}>A visa is issued for the purpose of obtaining</p>
+                        <p style={{marginLeft:"5%"}}>Secondary,general or vocational education abroad</p>
+                        <p style={{marginLeft:"5%"}}>Also on a student visa, you can take language courses</p>
+                        <p style={{marginLeft:"5%"}}>or advance training courses</p>
                     </Box>
                     <Box height="150px" border="1px" borderColor="lightblue" color="#03A9F4" padding="3px">
-                    <p>Writing an Essay</p>
-                        <p>A visa is issued for the purpose of obtaining</p>
-                        <p>Secondary,general or vocational education abroad</p>
-                        <p>Also on a student visa, you can take language courses</p>
-                        <p>or advance training courses</p>
+                    <p style={{color:"black",marginLeft:"40%",fontSize:"20px"}}>Writing an Essay</p>
+                        <p style={{marginLeft:"5%"}}>A visa is issued for the purpose of obtaining</p>
+                        <p style={{marginLeft:"5%"}}>Secondary,general or vocational education abroad</p>
+                        <p style={{marginLeft:"5%"}}>Also on a student visa, you can take language courses</p>
+                        <p style={{marginLeft:"5%"}}>or advance training courses</p>
                     </Box>
                 </SimpleGrid>
 
             </div>
 
             <div style={{width:"60%",margin:"auto",marginTop:"50px"}}>
-                <SimpleGrid columns={2} spacing={5}>
+                <SimpleGrid columns={2} spacing={5} cursor={"pointer"}>
                     <Box>
                         <img src="https://images.unsplash.com/photo-1581093577421-f561a654a353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGxhYnxlbnwwfDB8MHx8&auto=format&fit=crop&w=600&q=60" alt="" />
                     </Box>
@@ -184,3 +194,4 @@ const HomePage = () => {
 }
 
 export default HomePage
+
