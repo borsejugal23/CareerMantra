@@ -162,6 +162,10 @@ import axios from 'axios';
                                 <p className="stream">School of</p>
                                 <span className="select_stream">Engineering</span>
                                 <br /><br />
+                                <p className='stream_desc'>The Department of Engineering at Techno India University India is a conglomeration of multiple disciplines with separate</p>
+                                <br />
+                                <br /><br />
+                                <button className="apply_now">Apply Now</button>
                             </div>
                         </div>
                         <div className='education_div'>
@@ -172,6 +176,10 @@ import axios from 'axios';
                                 <p className="stream">School of</p>
                                 <span className="select_stream">Nursing</span>
                                 <br /><br />
+                                <p className='stream_desc'>Nursing is a course to introduce students to all aspects of general healthcare and profiency</p>
+                                <br />
+                                <br /><br />
+                                <button className="apply_now">Apply Now</button>
                             </div>
                         </div>
                         <div className='education_div'>
@@ -183,7 +191,10 @@ import axios from 'axios';
                                 <span className="select_stream">Science</span>
                                 <br />
                                 <br />
-                                <p className='stream_desc'>The Department of Science at Techno India University India is a conglomeration of multiple disciplines with separate.</p>
+                                <p className='stream_desc'>The Department of Science at Techno India University India is a conglomeration of multiple disciplines with separate</p>
+                                <br />
+                                <br /><br />
+                                <button className="apply_now">Apply Now</button>
                             </div>
                         </div>
                     </div>
