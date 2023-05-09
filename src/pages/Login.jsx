@@ -1,22 +1,24 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import { login } from '../Redux/CredentialReducer/action'
 
 const Login = () => {
 const navigate = useNavigate()
- const [email,setEmail] = useState("")
- const [password ,setPassword] = useState("")
+ const [email,setEmail] = useState("eve.holt@reqres.in")
+ const [password ,setPassword] = useState("123")
  const dispatch = useDispatch() 
  const {isAuth ,token} = useSelector((store)=>store.credentialReducer)
+const location = useLocation()
+
 
  const handleLogin = () => {
     const userData = {email ,password}
      dispatch(login(userData));
     console.log(isAuth,token)
-    alert("Login Successfully")
-    navigate("/")
+   // alert("Login Successfully")
+    navigate(location.state)
  }
 
 
