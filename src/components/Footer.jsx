@@ -6,6 +6,7 @@ import { BsInstagram} from "react-icons/bs"
 const Footer = () => {
   return (
     <>
+  
       <div style={{width:"100%",backgroundColor:"#1E88E5",paddingTop:"50px",paddingBottom:"50px"}}>
         <h1 style={{textAlign:"center",color:"white",fontFamily:"sans-serif",fontSize:"24px"}}>Subscribe to our Newsletter</h1>
         <div style={{margin:"auto",height:"50px",width:"50%",marginTop:"10px"}}>

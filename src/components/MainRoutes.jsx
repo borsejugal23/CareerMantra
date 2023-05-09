@@ -17,10 +17,10 @@ export const MainRoutes=()=>{
     {/* <Route path="/cart" element={<CartPage />}/> */}
 
    <Route path="/admin" element={<AdminUserList/>}/>
-   
+   {/* <Route path="/user/:id" element={}/> */}
 
 
-    <Route path="/single/:id" element={<SinglePage/>}/>
+    <Route path="/product/:id" element={<SinglePage/>}/>
 
    
  
