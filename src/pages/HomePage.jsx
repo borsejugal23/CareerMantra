@@ -55,6 +55,7 @@ const HomePage = () => {
         <Box>Language classes</Box>
       </SimpleGrid>
       <SimpleGrid columns={4} spacing={5} marginLeft={85} marginTop={20} fontWeight={400}>
+        
         <Link to="https://www.mq.edu.au/">
         <Box boxShadow='md'rounded='md' width={200} textAlign={"center"}>
             <img src="https://images.unsplash.com/photo-1583373834259-46cc92173cb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dW5pdmVyc2l0eSUyMGNhbXB1c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />

@@ -21,7 +21,7 @@ export const MainRoutes=()=>{
     <Route path="/cart" element={<CartPage/>}/>
     <Route path="/sign-up" element={<SignUp/>}/>
     <Route path="/login" element={<Login/>}/>
-    <Route path="/single/:id" element={<SinglePage/>}/>
+    <Route path="/product/:id" element={<SinglePage/>}/>
     <Route path="/admin" element={<Adminpage/>} />
     <Route path="/users" element={<AdminUserList />} />
     <Route path="/user/:id" element={<AdminUser />} />
