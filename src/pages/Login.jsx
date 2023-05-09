@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import { login } from '../Redux/CredentialReducer/action'
 
 const Login = () => {
-
+const navigate = useNavigate()
  const [email,setEmail] = useState("")
  const [password ,setPassword] = useState("")
  const dispatch = useDispatch() 
@@ -13,8 +13,10 @@ const Login = () => {
 
  const handleLogin = () => {
     const userData = {email ,password}
-     dispatch(login(userData))
+     dispatch(login(userData));
     console.log(isAuth,token)
+    alert("Login Successfully")
+    navigate("/")
  }
 
 
