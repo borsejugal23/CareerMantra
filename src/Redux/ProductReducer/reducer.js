@@ -1,9 +1,10 @@
-import { GET_FAILURE, GET_REQUEST, GET_SUCCESS } from "./actionTypes"
+import { GET_FAILURE, GET_PRODUCT_ID_SUCCESS, GET_REQUEST, GET_SUCCESS } from "./actionTypes"
 
 const initialstate={
     isLoading:false,
     isError:false,
-    products:[]
+    products:[],
+    // singleproduct:[]
 }
 export const reducer=(state=initialstate,{type,payload})=>{
     switch(type){
@@ -16,6 +17,9 @@ export const reducer=(state=initialstate,{type,payload})=>{
       case GET_FAILURE:{
         return {...state,isLoading:false,isError:true}
       }
+      // case GET_PRODUCT_ID_SUCCESS:{
+      //   return{...state,isLoading:false,singleproduct:payload}
+      // }
       default: return state
     }
 }
