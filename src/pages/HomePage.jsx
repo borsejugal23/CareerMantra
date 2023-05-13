@@ -56,53 +56,71 @@ const HomePage = () => {
       </SimpleGrid>
       <SimpleGrid columns={4} spacing={5} marginLeft={85} marginTop={20} fontWeight={400}>
 
-        <Link to="https://www.mq.edu.au/">
+        
         <Box boxShadow='md'rounded='md' width={200} textAlign={"center"}>
-
-       
-
+        <Link to="https://www.mq.edu.au/">
             <img src="https://images.unsplash.com/photo-1583373834259-46cc92173cb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dW5pdmVyc2l0eSUyMGNhbXB1c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >Austria</h1>
             <h5 >27 faculties</h5>
+            </Link> 
         </Box>
-        </Link>
-        <Link to="https://www.unimelb.edu.au/">
+        
         <Box boxShadow='md'rounded='md' width={200} textAlign={"center"} >
+        <Link to="https://www.unimelb.edu.au/">
         <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVuaXZlcnNpdHklMjBjYW1wdXN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >Australia</h1>
             <h5 >34 faculties</h5>
+            </Link>
         </Box>
-        </Link>
+        
         <Box boxShadow='md'rounded='md' width={200} textAlign={"center"}>
-        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
+        <Link to="https://www.ugent.be/en">
+            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >Belgium</h1>
             <h5 >28 faculties</h5>
+            </Link>
         </Box>
+        
         <Box boxShadow='md'rounded='md' width={200} textAlign={"center"}>
+        <Link to="https://www.ox.ac.uk/">
         <img src="https://images.unsplash.com/photo-1542868796-20f2ddc9d41f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHN0dWRlbnRzJTIwdGFsa2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >United Kingdom</h1>
             <h5 >43 faculties</h5>
+            </Link>
         </Box>
-        <Box boxShadow='md'rounded='md' width={200} textAlign={"center"}>
+       
+        <Box boxShadow='md' rounded='md' width={200} textAlign={"center"}>
+        <Link to="https://www.uni-heidelberg.de/en">
         <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >Germany</h1>
             <h5 >56 faculties</h5>
+            </Link>
         </Box>
+
         <Box boxShadow='md'rounded='md' width={200} textAlign={"center"}>
+        <Link to="https://www.ku.dk/english/">
         <img src="https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >Denmark</h1>
             <h5 >42 faculties</h5>
+            </Link>
         </Box>
+        
         <Box boxShadow='md'rounded='md' width={200} textAlign={"center"}>
+        <Link to="https://www.unimi.it/en">
         <img src="https://images.unsplash.com/20/cambridge.JPG?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >Italy</h1>
             <h5 >40 faculties</h5>
+            </Link>
         </Box>
+        
         <Box boxShadow='md'rounded='md' width={200} textAlign={"center"}>
+        <Link to="https://universidadeuropea.com/">
         <img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHVuaXZlcnNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="" />
             <h1 >Spain</h1>
             <h5 >52 faculties</h5>
+            </Link>
         </Box>
+        
       </SimpleGrid>
       <div style={{display:"flex",width:"100%",marginTop:"50px",}}>
         <div style={{width:"30%",height:"100%",justifyContent:"space-around"}}>
@@ -160,14 +178,14 @@ const HomePage = () => {
                         <p style={{marginLeft:"5%"}}>through Foodie numbers with you, ecomona</p>
                     </Box>
                     <Box height="150px" border="1px" borderColor="lightblue" color="#03A9F4" padding="3px">
-                    <p style={{color:"black",marginLeft:"40%",fontSize:"20px"}}>Preparation for exam</p>
+                    <p style={{color:"black",marginLeft:"30%",fontSize:"20px"}}>Preparation for exam</p>
                         <p style={{marginLeft:"5%"}}>A visa is issued for the purpose of obtaining</p>
                         <p style={{marginLeft:"5%"}}>Secondary,general or vocational education abroad</p>
                         <p style={{marginLeft:"5%"}}>Also on a student visa, you can take language courses</p>
                         <p style={{marginLeft:"5%"}}>or advance training courses</p>
                     </Box>
                     <Box height="150px" border="1px" borderColor="lightblue" color="#03A9F4" padding="3px">
-                    <p style={{color:"black",marginLeft:"40%",fontSize:"20px"}}>Writing an Essay</p>
+                    <p style={{color:"black",marginLeft:"30%",fontSize:"20px"}}>Writing an Essay</p>
                         <p style={{marginLeft:"5%"}}>A visa is issued for the purpose of obtaining</p>
                         <p style={{marginLeft:"5%"}}>Secondary,general or vocational education abroad</p>
                         <p style={{marginLeft:"5%"}}>Also on a student visa, you can take language courses</p>

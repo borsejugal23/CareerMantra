@@ -3,6 +3,7 @@ import React from 'react'
 import {TiSocialFacebook,TiSocialTwitter} from 'react-icons/ti'
 import { BsInstagram} from "react-icons/bs"
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
 
 const Footer = () => {
@@ -38,6 +39,7 @@ const Footer = () => {
                 <p style={{fontSize:"12px",fontFamily:"sans-serif"}}>scholarshipinternational.com</p>
                 <u style={{fontSize:"12px",fontFamily:"sans-serif",color:"#1DA1F2"}}><Link to="https://sell.sawbrokers.com/domain/CollegeInternational.com/" >collegeinternational.com</Link></u>
             </Box>
+            <DIV>
             <Box>
                 <h2 style={{fontFamily:"sans-serif",fontWeight:"bolder"}}>Let's connet</h2>
                 <div style={{display:"flex",width:"100%",padding:"10px"}} >
@@ -45,7 +47,7 @@ const Footer = () => {
                   <TiSocialFacebook size={"25px"} color='#166FE5' />
                   </Link>
                 <Link to="https://twitter.com/i/flow/login" >
-                <TiSocialTwitter size={"25px"} color='#1DA1F2' />
+                <TiSocialTwitter size={"25px"} color='#1DA1F2' className='Fb-icon' />
                 </Link>
                 <Link to="https://www.instagram.com/accounts/login/" >
                 <BsInstagram  size={"25px"} color='#F0019C'  />
@@ -53,10 +55,9 @@ const Footer = () => {
                 </div>
                 <p style={{fontSize:"12px",fontFamily:"sans-serif"}}>Ten:8(800)25325323</p>
                 <p style={{fontSize:"12px",fontFamily:"sans-serif"}}>Email:eduera@gmail.com</p>
-                
-                
-
-            </Box>    
+              
+            </Box>  
+            </DIV>  
         </SimpleGrid>
       </div>
     </>
@@ -64,3 +65,9 @@ const Footer = () => {
 }
 
 export default Footer
+
+const DIV = styled.div`
+.Fb-icon:hover{
+  color: black;
+  }
+`

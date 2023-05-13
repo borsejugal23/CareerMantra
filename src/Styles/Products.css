@@ -12,14 +12,15 @@
 .university_img{
     width:100%;
     height: 190px;
+    border-radius: 10px;
 }
 .card{
     display: flex;
-    
+    border-radius: 10px;
     width:98%;
     margin:10px;
     padding:10px;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    box-shadow: rgba(0, 0, 0, 0.75) 1px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 
 #icondiv{

@@ -1,8 +1,7 @@
-import React from "react";
 import { PRODUCT_FAILURE, PRODUCT_REQUEST, GET_PRODUCT_SUCCESS, ADD_PRODUCT_SUCCESS, EDIT_PRODUCT_SUCCESS } from "./actionTypes";
 import axios from "axios";
 
-const baseURL = "https://mu9umx-8080.csb.app/admin";
+const baseURL = "https://mu9umx-8080.csb.app/products";
 
 export const getProduct = (dispatch) => {
   dispatch({ type: PRODUCT_REQUEST });

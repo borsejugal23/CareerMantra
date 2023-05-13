@@ -14,7 +14,7 @@ const Nav = styled.nav`
   background-color:#F5F5F5;
   .logo {
     padding: 12px 0;
-    paddingBottom:0px;
+    padding-Bottom:0px;
   }
 `
 
@@ -22,8 +22,9 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-        <Link to={"/"}>        <span style={{fontFamily:"sans-serif",fontSize:"28px",color:"#1A237E",fontWeight:"bolder"}}>Career</span ><span style={{fontFamily:"sans-serif",fontSize:"28px",color:"#03A9F4",fontWeight:"bolder"}}>Mantra</span>
+        <Link to={"/"}> <span style={{fontFamily:"sans-serif",fontSize:"28px",color:"#1A237E",fontWeight:"bolder"}}>Career</span ><span style={{fontFamily:"sans-serif",fontSize:"28px",color:"#03A9F4",fontWeight:"bolder"}}>Mantra</span>
 </Link>
+<br />
         <p style={{fontFamily:"sans-serif",fontSize:"10px",marginTop:"0px", paddingTop:"0px"}}>select.study.apply</p>
       </div>
       <Burger />
