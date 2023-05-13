@@ -564,7 +564,8 @@
       {
         "id": 1,
         "username": "admin",
-        "password": "admin"
+        "password": "admin",
+        "token" : "tydhduune76r823878gd"
       }
     ],
     "admin": [

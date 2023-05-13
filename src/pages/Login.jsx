@@ -49,7 +49,7 @@ const location = useLocation()
             <input type="password" placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)} />
             <br />
             <button onClick={handleLogin}>LogIn</button>
-            <span>Don't have an account ? <Link className='log-btn' to='/login'>SignUp</Link> </span>
+            <span>Don't have an account ? <Link className='log-btn' to='/sign-up'>SignUp</Link> </span>
 
       </div>
     </div>
