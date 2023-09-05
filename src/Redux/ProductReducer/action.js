@@ -3,7 +3,7 @@ import { GET_FAILURE, GET_PRODUCT_ID_SUCCESS, GET_REQUEST, GET_SUCCESS } from ".
 
 export const getProducts=(query)=>(dispatch)=>{
     dispatch({type:GET_REQUEST})
-    axios.get(`https://mu9umx-8080.csb.app/products`,query)
+    axios.get(`https://deploy-json-t437.onrender.com/products`,query)
     .then((res)=>{
         dispatch({type:GET_SUCCESS,payload:res.data})
     })
@@ -13,7 +13,7 @@ export const getProducts=(query)=>(dispatch)=>{
 }
 // export const getProductsId=(id)=>(dispatch)=>{
 //     dispatch({type:GET_REQUEST})
-//     axios.get(`https://mu9umx-8080.csb.app/products/${id}`)
+//     axios.get(`https://deploy-json-t437.onrender.com/products/${id}`)
 //     .then((res)=>{
 //         // console.log(res.data)
 //         dispatch({type:GET_PRODUCT_ID_SUCCESS,payload:res?.data})

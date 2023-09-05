@@ -10,7 +10,7 @@ const AdminUserList = () => {
   const [data, setData] = useState([]);
   const fetchData = async () => {
     try {
-      const response = await axios.get('https://mu9umx-8080.csb.app/admin');
+      const response = await axios.get('https://deploy-json-t437.onrender.com/admin');
       console.log("res",response.data)
       setData(response.data);
     } catch (error) {
@@ -24,7 +24,7 @@ const AdminUserList = () => {
  
   const handleDelete = (id) => {
     axios
-      .delete(`https://mu9umx-8080.csb.app/admin/${id}`)
+      .delete(`https://deploy-json-t437.onrender.com/admin/${id}`)
       .then(() => {
         setData(data.filter((item) => item.id !== id));
       })

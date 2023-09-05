@@ -11,8 +11,8 @@ import axios from 'axios';
 
         const [detail,setDetail]=useState("");
        
-        const fechSingleproduct=(id)=>{
-            return axios.get(`https://mu9umx-8080.csb.app/products/${id}`)
+        const fechSingleproduct=async (id)=>{
+            return axios.get(`https://deploy-json-t437.onrender.com/products/${id}`)
             .then((res)=>{
                 setDetail(res.data)
                 

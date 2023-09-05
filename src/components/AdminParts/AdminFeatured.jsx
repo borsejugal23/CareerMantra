@@ -7,13 +7,13 @@ export const AdminFeatured = ({userData}) => {
 
 
     const studentTotal = userData.reduce((total, el) => {
-      const Students = el.students;
+      const Students = +el.students;
       const totalStudents = parseInt(Students);
       return total + totalStudents;
     }, 0);
     
     const facultyTotal = userData.reduce((total, el) => {
-      const Faculty = el.faculty;
+      const Faculty = +el.faculty;
       const totalFaculty = parseInt(Faculty);
       return total + totalFaculty;
     }, 0);

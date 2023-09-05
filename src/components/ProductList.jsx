@@ -41,12 +41,12 @@ export const ProductList=()=>{
         <div className="Product">
            
           {isLoading?<div className='spinner'><Spinner
-  thickness='3px'
-  speed='0.65s'
-  emptyColor='gray.200'
-  color='blue.500'
-  size='xl'
-/></div>:isError?<h1>Something Went Wrong</h1>:products?.map((e)=><ProductCart key={e.id} {...e}/>)}
+                thickness='3px'
+                speed='0.65s'
+                emptyColor='gray.200'
+                color='blue.500'
+                size='xl'
+        /></div>:isError?<h1>Something Went Wrong</h1>:products?.map((e)=><ProductCart key={e.id} {...e}/>)}
         </div>
     </div>
 }

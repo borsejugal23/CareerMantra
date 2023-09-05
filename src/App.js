@@ -12,7 +12,6 @@ function App() {
   
     <Navbar />
     <MainRoutes/>
-   {/* <AdminMainRoutes/> */}
     <Footer />
 
     </div>

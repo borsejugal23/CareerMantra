@@ -15,7 +15,7 @@ export const ProductCart=(
         brochure,
         id
     })=>{
-    // console.log(id)
+
     return <div className="card">
        <div style={{width:"30%"}}>
          <img src={images[0]} alt="place" className="university_img"/>
