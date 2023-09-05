@@ -1,8 +1,72 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import axios from 'axios';
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
+import { useToast } from '@chakra-ui/react';
 
 const SignUp = () => {
+    const [username, setusername] = useState('');
+    const [password, setPassword] = useState('');
+    const toast=useToast()
+
+    const navigate=useNavigate()
+  
+  
+    const handleSubmit = async(e) => {
+      e.preventDefault();
+      const response = await axios.get("https://deploy-json-t437.onrender.com/login");
+
+        const UserData = response.data;
+        // console.log(UserData,email,password)
+
+        const matchingUsers = UserData.filter((user) => user.username === username);
+        if (matchingUsers.length > 0) {
+          //  alert("")
+           toast({
+            title: "user alredy register, please login",
+            status: 'error',
+            duration: 5000,
+            isClosable: true,
+        })
+            //({ type: LOGIN_SUCCESS });
+        } else {
+            const formData = {
+      
+                username,
+                password
+              };
+          
+              fetch("https://deploy-json-t437.onrender.com/login", {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+              })
+                .then((response) => response.json())
+                .then((data) => {
+                  console.log('Registration successful:', data);
+                  // alert("registation done")
+                  toast({
+                    title: "Registration successful, please login",
+                    status: 'success',
+                    duration: 2000,
+                    isClosable: true,
+                })
+                //   setUsername('');
+                  setusername('');
+                  setPassword('');
+                //   setGender('');
+                navigate("/login")
+            
+                })
+                .catch((error) => {
+                  console.error('Registration failed:', error);
+                  alert("registration failed")
+                });
+        }
+     
+    };
   return (
     <DIV>
         <div className='background'>
@@ -22,12 +86,12 @@ const SignUp = () => {
                 
                 <br />
                 <label >Username</label>
-                <input type="text" placeholder='Enter your email'/>
+                <input type="text" placeholder='Enter your username' value={username} onChange={(e)=>setusername(e.target.value)}/>
                 <br />
                 <label >Password</label>
-                <input type="password" placeholder='Password' />
+                <input type="password" placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
                 <br />
-                <button>Sign Up</button>
+                <button onClick={handleSubmit}>Sign Up</button>
                 <span>Already have an account ? <Link className='log-btn' to='/login'>Login</Link> </span>
 
           </div>

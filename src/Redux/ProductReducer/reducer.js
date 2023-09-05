@@ -9,10 +9,10 @@ const initialstate={
 export const reducer=(state=initialstate,{type,payload})=>{
     switch(type){
       case GET_REQUEST:{
-        return{...state,isLoading:true}
+        return{...state,isLoading:true,isError:false}
       }
       case GET_SUCCESS:{
-        return {...state,isLoading:false,products:payload}
+        return {...state,isLoading:false,isError:false,products:payload}
       }
       case GET_FAILURE:{
         return {...state,isLoading:false,isError:true}

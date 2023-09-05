@@ -1,10 +1,7 @@
 .sidebar{
-    /* border: 1px solid red; */
     width:90%;
     margin:10px auto;
-    /* height: 10%; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    /* position: sticky; */
 }
 .shortdiv{
     
@@ -14,12 +11,10 @@
 .filtertitle{
     font-size: 17px;
  
-    /* padding-right:140px; */
     border:1px solid red;
 }
 .postion{
     position: absolute;
-    /* border:1px solid red; */
     left: 7%;
     top: 88px;
     font-size: 25px;

@@ -19,7 +19,7 @@ const Footer = () => {
       <div style={{width:"90%",margin:"auto",marginTop:"50px"}}>
         <SimpleGrid columns={[2,3,4]}  spacing={10}>
             <Box  >
-                <p style={{fontFamily:"sans-serif",fontSize:"24px",color:"#191919",fontWeight:"bolder"}} >EduEra</p>
+                <p style={{fontFamily:"sans-serif",fontSize:"24px",color:"#1A237E",fontWeight:"bolder"}} >CareerMantra</p>
                 <h2 className="Hover" style={{fontFamily:"sans-serif",fontWeight:"bolder"}}>About Us</h2>
                 <p style={{fontSize:"12px",fontFamily:"sans-serif"}}>select.study.apply</p>
                 <p style={{fontSize:"12px",fontFamily:"sans-serif"}}>Meet the team</p>

@@ -6,14 +6,12 @@ import { MainRoutes } from "./components/MainRoutes";
 
 
 
-
 function App() {
   return (
     <div >
   
     <Navbar />
     <MainRoutes/>
-   {/* <AdminMainRoutes/> */}
     <Footer />
 
     </div>

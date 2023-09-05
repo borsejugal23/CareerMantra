@@ -12,15 +12,23 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   background-color:#F5F5F5;
+  position:relative;
+    position:sticky;
+    top:0;
+     z-index: 100;
+    margin: auto;
   .logo {
     padding: 12px 0;
-    paddingBottom:0px;
+    padding-bottom:0px;
+  }
+  .navbar{
+   
   }
 `
 
 const Navbar = () => {
   return (
-    <Nav>
+    <Nav className="navbar">
       <div className="logo">
         <Link to={"/"}>        <span style={{fontFamily:"sans-serif",fontSize:"28px",color:"#1A237E",fontWeight:"bolder"}}>Career</span ><span style={{fontFamily:"sans-serif",fontSize:"28px",color:"#03A9F4",fontWeight:"bolder"}}>Mantra</span>
 </Link>

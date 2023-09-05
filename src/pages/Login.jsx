@@ -1,26 +1,61 @@
 import React, { useState } from 'react'
+
+
+
+
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom'
+
 import styled from 'styled-components'
 import { login } from '../Redux/CredentialReducer/action'
+import { useToast } from '@chakra-ui/react';
 
 const Login = () => {
 const navigate = useNavigate()
- const [email,setEmail] = useState("eve.holt@reqres.in")
- const [password ,setPassword] = useState("123")
- const dispatch = useDispatch() 
- const {isAuth ,token} = useSelector((store)=>store.credentialReducer)
-const location = useLocation()
+
+const location =useLocation();
+  
+const dispatch=useDispatch()
+const toast=useToast()
+ const [username,setusername] = useState("")
+ const [password ,setPassword] = useState("")
+
+ 
 
 
- const handleLogin = () => {
-    const userData = {email ,password}
-     dispatch(login(userData));
-    console.log(isAuth,token)
-   // alert("Login Successfully")
-    navigate(location.state)
- }
 
+
+
+
+ 
+
+ let obj={
+    username,
+    password
+  }
+  console.log(location)
+const handleLogin=()=>{
+  dispatch(login(obj)).then(()=>{
+      
+    if (location.state){
+        toast({
+            title: "Logged in successfully, please wait...",
+            status: 'success',
+            duration: 5000,
+            isClosable: true,
+        })
+        navigate(location.state)
+    }else{
+        toast({
+            title: "Logged in successfully",
+            status: 'success',
+            duration: 5000,
+            isClosable: true,
+        })
+        navigate("/product")
+    }
+})
+}
 
 
 
@@ -43,13 +78,13 @@ const location = useLocation()
             
             <br />
             <label >Username</label>
-            <input type="text" placeholder='Enter your email' value={email} onChange={(e)=>setEmail(e.target.value)} />
+            <input type="text" placeholder='Enter your username' value={username} onChange={(e)=>setusername(e.target.value)} />
             <br />
             <label >Password</label>
             <input type="password" placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)} />
             <br />
             <button onClick={handleLogin}>LogIn</button>
-            <span>Don't have an account ? <Link className='log-btn' to='/login'>SignUp</Link> </span>
+            <span>Don't have an account ? <Link className='log-btn' to='/sign-up'>SignUp</Link> </span>
 
       </div>
     </div>
