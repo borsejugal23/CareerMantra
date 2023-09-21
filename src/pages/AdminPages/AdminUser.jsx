@@ -13,7 +13,7 @@ export default function AdminUser () {
 
     const fetchData = async () => {
         try {
-          const response = await axios.get(`https://deploy-json-t437.onrender.com/admin/${id}`);
+          const response = await axios.get(`https://deploy-json-t437.onrender.com/products/${id}`);
           console.log("res",response.data)
           setData(response.data);
         } catch (error) {
@@ -33,7 +33,7 @@ export default function AdminUser () {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.put(`https://deploy-json-t437.onrender.com/admin/${id}`, data);
+            const response = await axios.put(`https://deploy-json-t437.onrender.com/products/${id}`, data);
             console.log(response.data);
             fetchData(); // refresh data after update
         } catch (error) {
