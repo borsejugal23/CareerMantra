@@ -1,70 +1,55 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Career Mantra 
 
-## Available Scripts
+This is the clone of EDUERA website which basically deals with various universities across the glob , for higher education.
+Collabarative project of 4 members.
+Duration- 5 days.
 
-In the project directory, you can run:
+## Pages and features
+- Home Page:- Navigation Bar, Footer,Login,Signup.
+- Product Page:- It has sorting & filtering functionality.
+- Single Page
+- Admin Page :- Admin dashboard.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h3 align="left">Languages and Tools:</h3>
+<p align="left" style=' width:"90%"; margin: auto; padding: 23px; display: flex; gap: 18px;'> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer">  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://chakra-ui.com/" target="_blank" rel="noreferrer"> <img src="https://image.pngaaa.com/704/7959704-middle.png" alt="react" width="50" height="40"/> </a> <a href="https://openbase.com/js/slick-slider/documentation" target="_blank" rel="noreferrer">   <img src="https://th.bing.com/th/id/OIP.WcRnU2ERqYHZBKBQ0zXCvgHaGs?w=188&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="react" width="50" height="40"/> </a></p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Some Glimpse of our Cloned Website
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Landing page
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![career-1](https://github.com/borsejugal23/CareerMantra/assets/115457172/d3188813-0d0d-4008-aca9-76133356766f)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Login section
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+![2023-09-14 (3)](https://github.com/borsejugal23/CareerMantra/assets/115457172/2f200678-db19-4ec5-870a-5c302fd30f2e)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Product Page
+![career-2](https://github.com/borsejugal23/CareerMantra/assets/115457172/e2341215-f358-4578-aa5a-5aaaf0d3e5c6)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Single Page
+![career-3](https://github.com/borsejugal23/CareerMantra/assets/115457172/9f20b804-ee2f-4ec1-a77b-69ac73b9fec6)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+![career-4](https://github.com/borsejugal23/CareerMantra/assets/115457172/5e305957-7c2f-4e49-a66d-8d811f2448d1)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Admin Dashboard 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![career-5](https://github.com/borsejugal23/CareerMantra/assets/115457172/62accd5d-7e3a-4777-bd45-c5ec77d8b0f9)
 
-### Code Splitting
+![career-6](https://github.com/borsejugal23/CareerMantra/assets/115457172/48ca324b-6a39-4842-998e-1c9db9edf0ff)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. [Jugal Borse](https://github.com/borsejugal23)  ( Team lead )
+2. [Ashish meel](https://github.com/Ashishmeel007) 
+3. [Ankit singh](https://github.com/ank501)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
