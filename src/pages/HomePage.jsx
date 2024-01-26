@@ -109,7 +109,7 @@ const HomePage = () => {
             <img src="https://images.unsplash.com/photo-1634087990018-415aeb951215?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHN0dWRlbnR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="" style={{height:"100%",marginTop:"10%",marginLeft:"25px"}}/>
         </div>
         <div style={{width:"70%"}}>
-            <h1 style={{fontFamily:"sans-serif",fontSize:"24px",fontWeight:"bolder",textAlign:"center"}}>Choose your Faculties</h1>
+            <h1 style={{fontFamily:"sans-serif",fontSize:"24px",fontWeight:"bolder",textAlign:"center"}}>Choose your Stream</h1>
             <SimpleGrid columns={2} spacing={4} marginLeft={125} marginTop={5} fontWeight={400}>
                 <Box>Art and design</Box>
                 <Box>Business and management</Box>
@@ -154,24 +154,26 @@ const HomePage = () => {
                     </Box>
                     <Box height="150px" border="1px" borderColor="lightblue" color="#03A9F4" padding="3px">
                     <p style={{color:"black",marginLeft:"15%",fontSize:"20px"}}>Admission to Top Universities</p>
-                        <p style={{marginLeft:"5%"}}>all stages of admission are more important from</p>
+                        <p style={{marginLeft:"5%"}}>All stages of admission are more important from</p>
                         <p style={{marginLeft:"5%"}}>the choice of educational qualification to the </p>
                         <p style={{marginLeft:"5%"}}>issuance of a visa. Therefore, we want to go </p>
                         <p style={{marginLeft:"5%"}}>through Foodie numbers with you, ecomona</p>
                     </Box>
                     <Box height="150px" border="1px" borderColor="lightblue" color="#03A9F4" padding="3px">
-                    <p style={{color:"black",marginLeft:"40%",fontSize:"20px"}}>Preparation for exam</p>
+                    <p style={{color:"black",marginLeft:"30%",fontSize:"20px",marginBottom:"3px"}}>Preparation for exam</p>
+                   
                         <p style={{marginLeft:"5%"}}>A visa is issued for the purpose of obtaining</p>
                         <p style={{marginLeft:"5%"}}>Secondary,general or vocational education abroad</p>
                         <p style={{marginLeft:"5%"}}>Also on a student visa, you can take language courses</p>
                         <p style={{marginLeft:"5%"}}>or advance training courses</p>
                     </Box>
                     <Box height="150px" border="1px" borderColor="lightblue" color="#03A9F4" padding="3px">
-                    <p style={{color:"black",marginLeft:"40%",fontSize:"20px"}}>Writing an Essay</p>
-                        <p style={{marginLeft:"5%"}}>A visa is issued for the purpose of obtaining</p>
-                        <p style={{marginLeft:"5%"}}>Secondary,general or vocational education abroad</p>
-                        <p style={{marginLeft:"5%"}}>Also on a student visa, you can take language courses</p>
-                        <p style={{marginLeft:"5%"}}>or advance training courses</p>
+                    <p style={{color:"black",marginLeft:"40%",fontSize:"20px"}}>Placements</p>
+                    
+                        <p style={{marginLeft:"5%"}}>Ignite your professional journey with our dynamic </p>
+                        <p style={{marginLeft:"5%"}}>placement program, seamlessly connecting students</p>
+                        <p style={{marginLeft:"5%"}}>to top-tier opportunities. Elevate your career prospects</p>
+                        <p style={{marginLeft:"5%"}}>with hands-on experience and personalized support</p>
                     </Box>
                 </SimpleGrid>
 

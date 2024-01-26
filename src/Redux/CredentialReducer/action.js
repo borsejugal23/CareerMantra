@@ -10,9 +10,11 @@ export const login = (obj) => async (dispatch) => {
         const UserData = response.data;
         console.log(UserData)
         const matchingUsers = UserData.filter((user) => user.username === obj.username && user.password === obj.password);
-
+        
+        console.log(matchingUsers)
         if (matchingUsers.length > 0) {
-            console.log("Login successful");
+            // console.log("Login successful");
+            localStorage.setItem("token",true)
             dispatch({ type: LOGIN_SUCCESS });
         } else {
             console.log("Login failed");
