@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <>
-  
+      <br />
       <div style={{width:"100%",backgroundColor:"#1E88E5",paddingTop:"50px",paddingBottom:"50px"}}>
         <h1 style={{textAlign:"center",color:"white",fontFamily:"sans-serif",fontSize:"24px"}}>Subscribe to our Newsletter</h1>
         <div style={{margin:"auto",height:"50px",width:"50%",marginTop:"10px"}}>
@@ -41,13 +41,13 @@ const Footer = () => {
             <Box>
                 <h2 style={{fontFamily:"sans-serif",fontWeight:"bolder"}}>Let's connet</h2>
                 <div style={{display:"flex",width:"100%",padding:"10px"}} >
-                  <Link to="https://www.facebook.com/login/" >
+                  <Link to="" >
                   <TiSocialFacebook size={"25px"} color='#166FE5' />
                   </Link>
-                <Link to="https://twitter.com/i/flow/login" >
+                <Link to="" >
                 <TiSocialTwitter size={"25px"} color='#1DA1F2' />
                 </Link>
-                <Link to="https://www.instagram.com/accounts/login/" >
+                <Link to="" >
                 <BsInstagram  size={"25px"} color='#F0019C'  />
                 </Link>
                 </div>

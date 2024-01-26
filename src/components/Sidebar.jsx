@@ -84,7 +84,7 @@ export const Sidebar=()=>{
     return <div className="sidebar">
        <div>
         <div  className="postion">
-           <p> <HiFilter/></p></div>
+           <p style={{fontSize:"20px",marginTop:"3px"}}> <HiFilter/></p></div>
         <h1 style={{fontSize:"20px"}}>Filter By</h1>
         
         <br />
