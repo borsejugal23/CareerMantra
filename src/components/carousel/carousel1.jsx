@@ -36,7 +36,7 @@ export default function Carousel() {
     "https://i2-prod.cambridge-news.co.uk/news/cambridge-news/article24183175.ece/ALTERNATES/s1200d/0_JS238376993.jpg",
     "https://www.visitcambridge.org/app/uploads/2021/11/corpus-christi-1600x0-c-default.jpg",
   ];
-//https://www.ox.ac.uk/sites/files/oxford/styles/ow_large_feature/s3/field/field_image_main/b_AllSoulsquad.jpg?itok=tTcH-5ix
+  //https://www.ox.ac.uk/sites/files/oxford/styles/ow_large_feature/s3/field/field_image_main/b_AllSoulsquad.jpg?itok=tTcH-5ix
   return (
     <Box
       position={"relative"}
@@ -76,7 +76,7 @@ export default function Carousel() {
       >
         <BiLeftArrowAlt />
       </IconButton>
-      
+
       {/* Right Icon */}
       <IconButton
         aria-label="right-arrow"
@@ -107,7 +107,6 @@ export default function Carousel() {
             backgroundRepeat="no-repeat"
             backgroundSize="contain"
             backgroundImage={`url(${url})`}
-           
           />
         ))}
       </Slider>
