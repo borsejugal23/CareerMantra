@@ -17,18 +17,15 @@ const SignUp = () => {
       const response = await axios.get("https://deploy-json-t437.onrender.com/login");
 
         const UserData = response.data;
-        // console.log(UserData,email,password)
 
         const matchingUsers = UserData.filter((user) => user.username === username);
         if (matchingUsers.length > 0) {
-          //  alert("")
            toast({
             title: "user alredy register, please login",
             status: 'error',
             duration: 5000,
             isClosable: true,
         })
-            //({ type: LOGIN_SUCCESS });
         } else {
             const formData = {
       

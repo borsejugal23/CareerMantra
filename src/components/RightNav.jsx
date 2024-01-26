@@ -1,9 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import {BsFillHandbagFill,BsFillHeartFill}from "react-icons/bs"
-import {CgProfile}from "react-icons/cg"
-import {BiHeartCircle} from "react-icons/bi"
-import { Link } from 'react-router-dom';
+import React from "react";
+import styled from "styled-components";
+import { CgProfile } from "react-icons/cg";
+import { BiHeartCircle } from "react-icons/bi";
+import { Link } from "react-router-dom";
 const Ul = styled.ul`
   list-style: none;
   display: flex;
@@ -13,9 +12,9 @@ const Ul = styled.ul`
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #2196F3;
+    background-color: #2196f3;
     position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
     height: 100vh;
@@ -33,17 +32,35 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <Link to={"/"}><li>Home</li></Link>
-      <Link to={"/product"}><li>University</li></Link>
-      <Link to={"/product"}><li>Acadamics</li></Link>
-      <Link to={"/sign-up"}><li>Sign-up</li></Link>
-      <Link to={"/login"}><li>Login</li></Link>
-      <li> <BiHeartCircle size={"25px"}/> </li>
-      
-      <Link to={"/admin"}><li> <CgProfile size={"25px"} /> </li></Link>
+      <Link to={"/"}>
+        <li>Home</li>
+      </Link>
+      <Link to={"/product"}>
+        <li>University</li>
+      </Link>
+      <Link to={"/product"}>
+        <li>Acadamics</li>
+      </Link>
+      <Link to={"/sign-up"}>
+        <li>Sign-up</li>
+      </Link>
+      <Link to={"/login"}>
+        <li>Login</li>
+      </Link>
+      <li>
+        {" "}
+        <BiHeartCircle size={"25px"} />{" "}
+      </li>
+
+      <Link to={"/admin"}>
+        <li>
+          {" "}
+          <CgProfile size={"25px"} />{" "}
+        </li>
+      </Link>
       <li></li>
     </Ul>
-  )
-}
+  );
+};
 //Academics
-export default RightNav
+export default RightNav;

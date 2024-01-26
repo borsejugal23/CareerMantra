@@ -64,13 +64,22 @@ export const ProductList = () => {
         ) : products && products.length > 0 ? (
           products.map((e, i) => <ProductCart key={i + 1} {...e} />)
         ) : (
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center',marginTop:"190px" }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              textAlign: "center",
+              marginTop: "190px",
+            }}
+          >
             <img
               src="https://students.masaischool.com/static/media/assignment-article.306c336bf8778468914b433407306985.svg"
               alt="Data not found"
-              style={{width:"20%"}}
+              style={{ width: "20%" }}
             />
-            <h1 style={{fontSize:"20px"}}>Data not found</h1>
+            <h1 style={{ fontSize: "20px" }}>Data not found</h1>
           </div>
         )}
         <br />
